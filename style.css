@@ -85,3 +85,81 @@ nav ul li a {
   .foto {
     width: 50%
   }
+
+
+
+
+
+
+  .banner-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  .bannerfoto {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .navbar {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    padding: 15px 40px;
+    background: transparent;
+    grid-template-columns: 1fr auto 1fr;
+    margin-top: 35px;
+  }
+  
+  .nav-spacer {
+    grid-column: 1;
+  }
+
+
+  .nav-left {
+    grid-column: 2;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    
+  }
+  
+  .nav-left a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-right {
+    grid-column: 3;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end;
+  }
+  
+  .heart-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #2b3b2b; /* Donkergroen */
+  }
+  
+  .login-button {
+    background-color: #2b3b2b;
+    color: #e6f0e6;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
