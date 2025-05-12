@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Culniara</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/footer.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://www.flaticon.com/?k=1731866416334&log-in=google" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" rel="stylesheet">
@@ -12,87 +13,110 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
-    
-    <div class="banner-container">
-        <img src="banner7.png" class="bannerfoto" alt="Banner image">
-
-        <header class="navbar">
-            <nav class="nav-left">
-              <a href="#Bestellen ">Bestellen</a>
-              <a href="#Bonus">Bonus</a>
-              <a href="#Contact">Contact</a>
-              <a href="#OverOns">Over ons</a>
+  <header>
+    <div class="topbar">
+        <div class="logo">Culinaria</div>
+        <div class="nav-container">
+            <nav>
+                <a href="#">Bestellen</a>
+                <a href="#">Bonus</a>
+                <a href="#">Contact</a>
+                <a href="#">Over ons</a>
             </nav>
-            <div class="nav-right">
-              <button class="heart-button">❤️</button>
-              <button class="login-button">Log in / sign up</button>
-            </div>
-          </header>
-    </div>
-    
-    
-    
-    <main>
-        <section class="intro">
-            <div class="circle"></div>
-            <div class="illustration"></div>
-        </section>
-
-        <div class="menu-container">
-            <h2 class="menu-title">Menu</h2>
-            <div class="menu-cards">
-              <div class="card" style="background-color: #fbbf24;">
-                <img src="gerechtfoto.png" alt="gerecht">
-              </div>
-              <div class="card" style="background-color: #7dd3fc;">
-                <img src="dessertfoto.png" alt="dessert">
-              </div>
-              <div class="card" style="background-color: #f9a8d4;">
-                <section class="foto"> 
-                <img src="drinkfoto.png" alt="Drink">
-                </section>
-              </div>
-            </div>
-          </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<div class="content">
-    <img src="nieuwstegerechten.png" alt="nieuwegrechten">
-</div>
-
-        
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <h2>CULNIARA</h2>
-            <div class="contact">
-                <h3>CONTACT ONS</h3>
-                <p>(XX) XXX XXXX XXX</p>
-                <p>XX-XXX XXXX XXXX</p>
-                <p>info@email.com</p>
-            </div>
-            <div class="subscribe">
-                <h3>Subscribe</h3>
-                <p>XXXXXXXXXX</p>
-                <p>XXXXXXXXXX</p>
-                <input type="email" placeholder="E-mail">
-            </div>
         </div>
-        <section class="footer-social">
-            <p>Wil je ons volgen?</p>
-            <section class="social-icons">
-            
-               <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-               <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-               <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
-            </section>
-         </section>
-    </footer>
+        <div class="login-container">
+            <button class="login-btn">Log in / Sign up</button>
+        </div>
+    </div>
+  
+    <div class="hero-banner">
+        <img src="/fotos/Banner%20(2).jpg" alt="Banner" class="banner-image">
+        <div class="hero-text">
+            <h1>CULINIARA</h1>
+            <p class="sub">MAALTIJD ASSISTENT</p>
+            <p>Wat eten we vandaag? Wij weten het.<br>
+            De ultieme oplossing voor jouw perfecte maaltijd vind je bij ons!</p>
+            <button>Ga verder</button>
+        </div>
+    </div>
+</header>
+
+  
+<section class="categories">
+  <h2>WAT TE ETEN?</h2>
+  <p>Makkelijk, snel en vooral lekker.</p>
+  <div class="cards">
+      <div class="card">
+          <img src="/fotos/taartt.png" alt="Desserts">
+          <div class="label">Desserten</div>
+      </div>
+      <div class="card lower">
+          <img src="/fotos/steak.png" alt="Gerechten">
+          <div class="label">Gerechten</div>
+      </div>
+      <div class="card">
+          <img src="/fotos/drinken.png" alt="Dranken">
+          <div class="label">Dranken</div>
+      </div>
+  </div>
+</section>
+
+
+<section class="over-ons">
+  <div class="over-ons-tekst">
+    <h2>OVER ONS</h2>
+    <p>
+      Bij Culinaria draait alles om smaak, gemak en inspiratie. Wij zijn een gepassioneerd team van foodlovers dat jou elke dag wil helpen om heerlijke gerechten op tafel te zetten. Ontdek onze slimme recepten en laat je verrassen!
+    </p>
+    <a href="#" class="over-ons-button">Meer lezen</a>
+  </div>
+  <div class="over-ons-afbeelding">
+    <img src="/fotos/overons.png" alt="Over ons afbeelding">
+  </div>
+</section>
+
+  <section class="new-menu">
+      <h2>ONZE NIEUWE MENU</h2>
+      <div class="menu-items">
+          <div class="item">
+              <img src="images/lamsrack.jpg" alt="Lamsrack">
+              <h3>Lamsrack met kruidenkorst</h3>
+              <p>Sappig lamsvlees bedekt met een smaakvolle kruidenmix.</p>
+          </div>
+          <div class="item">
+              <img src="images/mousse.jpg" alt="Mousse">
+              <h3>Witte chocolademousse</h3>
+              <p>Romige mousse afgewerkt met rode bessen.</p>
+          </div>
+          <div class="item">
+              <img src="images/mojito.jpg" alt="Mojito">
+              <h3>Frambozen-mojito met munt</h3>
+              <p>Verfrissende cocktail met een twist van munt en frambozen.</p>
+          </div>
+      </div>
+  </section>
+
+  <footer>
+      <div class="footer-container">
+          <div>
+              <h4>Culinaria</h4>
+              <p>Jouw slimme maaltijd-assistent – snel, heerlijk en altijd boordevol smaak.</p>
+          </div>
+          <div>
+              <h4>Snelle Links</h4>
+              <ul>
+                  <li><a href="#">Over ons</a></li>
+                  <li><a href="#">Ons menu</a></li>
+                  <li><a href="#">Galerij</a></li>
+                  <li><a href="#">FAQ's</a></li>
+                  <li><a href="#">Contact</a></li>
+              </ul>
+          </div>
+          <div>
+              <h4>Contact ons</h4>
+              <input type="email" placeholder="E-mail adres">
+          </div>
+      </div>
+  </footer>
 </body>
 </html>
