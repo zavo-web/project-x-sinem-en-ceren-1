@@ -4,21 +4,23 @@
   <meta charset="UTF-8">
   <title>Dessertpagina</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+  <link rel="stylesheet" href="/desserten.css">
 </head>
+
 <body>
   <div class="container">
     <aside class="sidebar">
+      <img src="/fotos/Logo.png" alt="logo" class="logo">
       <h3>Soorten desserten</h3>
       <input type="text" placeholder="Zoek dessert..." class="filter-zoekbalk">
       <ul>
-        <li><input type="checkbox"> Taarten</li>
-        <li><input type="checkbox"> Ijs desserten</li>
-        <li><input type="checkbox"> Koekjes</li>
-        <li><input type="checkbox"> Pudding</li>
-        <li><input type="checkbox"> Fruittige desserten</li>
-        <li><input type="checkbox"> Warme desserten</li>
-        <li><input type="checkbox"> Gezonde desserten</li>
+        <li><input type="checkbox" class="filter" data-type="taarten"> Taarten</li>
+        <li><input type="checkbox" class="filter" data-type="ijs"> Ijs desserten</li>
+        <li><input type="checkbox" class="filter" data-type="koekjes"> Koekjes</li>
+        <li><input type="checkbox" class="filter" data-type="pudding"> Pudding</li>
+        <li><input type="checkbox" class="filter" data-type="fruittig"> Fruittige desserten</li>
+        <li><input type="checkbox" class="filter" data-type="warm"> Warme desserten</li>
+        <li><input type="checkbox" class="filter" data-type="gezond"> Gezonde desserten</li>
       </ul>
       <h3>Op basis van</h3>
       <ul>
@@ -28,43 +30,78 @@
       </ul>
     </aside>
 
-    <main class="header">
+    <main class="main-content">
       <header class="nav">
-        <a href="bestellen.html">Bestellen</a>
-        <a href="bonus.html">Bonus</a>
-        <a href="contact.html">Contact</a>
-        <a href="over_ons.html">Over ons</a>
-        <div class="icons">
-          <i class="material-icons" style="font-size:35px;">favorite_border</i>
-          <i class="material-icons" style="font-size:35px;">account_circle</i>
-        </div>
-      </header>
+    <div class="nav-links">
+        <a href="#">Bestellen</a>
+        <a href="#">Bonus</a>
+        <a href="#">Contact</a>
+        <a href="#">Over ons</a>
+    </div>
+    <div class="icons">
+        <i class="material-icons">favorite_border</i>
+        <i class="material-icons">account_circle</i>
+    </div>
+</header>
+
 
       <section class="banner">
-        <div class="banner-text">
-          <h2>Probeer onze nieuwe ijskoffie-smaken!</h2>
-          <p>Ijgekoeld, romig en onweerstaanbaar!</p>
-        </div>
+        <img src="/fotos/bannerdessert.png" alt="Banner">
       </section>
 
-      <section class="desserts">
-        <div class="card">
-          <img src="/fotos/appelcake.png" alt="Tarte Tatin">
-          <h4>Ananastarte tatin met chocolademousse en frambozencoulis</h4>
-          <p>20 min • 440 kcal</p>
-        </div>
-        <div class="card">
-          <img src="/fotos/wafels.png" alt="Wafels">
-          <h4>Brusselse wafels</h4>
-          <p>40 min • 590 kcal</p>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/150" alt="Brownie ijs">
-          <h4>Warme brownies met cookie dough ijs</h4>
-          <p>20 min • 440 kcal</p>
-        </div>
-      </section>
+     <section class="desserts">
+  <div class="card" data-type="taarten">
+    <div class="card-image">
+      <img src="/fotos/appeltaart.png" alt="Tarte Tatin">
+      <i class="material-icons favorite-icon">favorite_border</i>
+    </div>
+    <h4>Ananastarte tatin met chocolademousse</h4>
+    <p>20 min • 440 kcal</p>
+  </div>
+  
+  <div class="card" data-type="wafels">
+    <div class="card-image">
+      <img src="/fotos/wafels.png" alt="Wafels">
+      <i class="material-icons favorite-icon">favorite_border</i>
+    </div>
+    <h4>Brusselse wafels</h4>
+    <p>40 min • 590 kcal</p>
+  </div>
+  
+  <div class="card" data-type="brownie">
+    <div class="card-image">
+      <img src="/fotos/brownie.png" alt="Brownie ijs">
+      <i class="material-icons favorite-icon">favorite_border</i>
+    </div>
+    <h4>Warme brownies met cookie dough ijs</h4>
+    <p>20 min • 440 kcal</p>
+  </div>
+</section>
+
     </main>
   </div>
+
+  <script>
+    const checkboxes = document.querySelectorAll('.filter');
+    const cards = document.querySelectorAll('.card');
+
+    checkboxes.forEach(cb => {
+      cb.addEventListener('change', () => {
+        // Haal alle actieve types op
+        const activeTypes = Array.from(checkboxes)
+          .filter(c => c.checked)
+          .map(c => c.getAttribute('data-type'));
+
+        if (activeTypes.length === 0) {
+          cards.forEach(card => card.style.display = 'flex');
+        } else {
+          cards.forEach(card => {
+            const cardType = card.getAttribute('data-type');
+            card.style.display = activeTypes.includes(cardType) ? 'flex' : 'none';
+          });
+        }
+      });
+    });
+  </script>
 </body>
 </html>
