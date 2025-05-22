@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Cormorant Garamond';
 }
 
 .topnav {
@@ -11,7 +11,7 @@ body {
 }
 
 .topnav a {
-  color: #e0c6a7; /* Licht goudkleurig */
+  color: #e0c6a7; 
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
@@ -20,6 +20,7 @@ body {
 .login-banner {
   position: relative;
   width: 100%;
+  height: 100vh;
 }
 
 .log-in-image {
@@ -31,10 +32,9 @@ body {
 .tekst-overlay {
   position: absolute;
   top: 25%;
-  left: 8%;
+  left: 20%;
   color: #e0c6a7;
   max-width: 600px;
-  text-transform: uppercase;
 }
 
 .tekst-overlay h2 {
@@ -53,3 +53,20 @@ body {
   font-size: 15px;
   line-height: 1.6;
 }
+
+
+
+.back-arrow {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #e0c6a7;
+  font-size: 32px;
+  z-index: 20;
+  text-decoration: none;
+}
+
+.material-icons {
+  font-size: 36px;
+}
+
