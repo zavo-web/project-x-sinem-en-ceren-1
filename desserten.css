@@ -11,6 +11,7 @@ body {
   background: #000;
   color: #fff;
   height: 100vh;
+  font-family: 'Cormorant Garamond';
 }
 
 .container {
@@ -91,6 +92,7 @@ body {
   text-decoration: none;
   color: #fff;
   font-weight: 500;
+  font-size: 1.2em;
 }
 
 .icons {
