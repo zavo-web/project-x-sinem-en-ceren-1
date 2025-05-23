@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: 'Cormorant Garamond';
+}
+
+.topnav {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  z-index: 10;
+}
+
+.topnav a {
+  color: #e0c6a7; 
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.login-banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.log-in-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tekst-overlay {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  color: #e0c6a7;
+  max-width: 600px;
+}
+
+.tekst-overlay h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.lijn-onder {
+  width: 80px;
+  height: 3px;
+  background-color: #e0c6a7;
+  margin-bottom: 20px;
+}
+
+.tekst-overlay p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+
+.back-arrow {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #e0c6a7;
+  font-size: 32px;
+  z-index: 20;
+  text-decoration: none;
+}
+
+.material-icons {
+  font-size: 36px;
+}
+
