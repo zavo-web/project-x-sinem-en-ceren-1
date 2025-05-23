@@ -103,10 +103,12 @@ body {
 }
 
 .categories h2 {
-  font-family: 'Montserrat';
-  font-weight: 800; 
+  font-family: 'Cormorant Garamond';
+  font-size: 2.2em;
 
 }
+
+
 
 .hero-text {
   position: absolute;
@@ -167,8 +169,7 @@ body {
 
 .card, .item {
   background: #222;
-  border-radius: 10px;
-  padding: 20px;
+  
   width: 250px;
 }
 
@@ -240,22 +241,21 @@ body {
 }
 
 
-
-
 .categories {
-  padding: 60px 20px;
-  text-align: center;
-  background-image: url('/jouw-pad/achtergrond.jpg'); 
+  padding: 10px 0px 10px;
+  background-image: url("/fotos/ACHTERGROND\ PC.jpg");
   background-size: cover;
   background-position: center;
-  font-family: 'Cormorant Garamond';
+  padding: 2rem 1rem;
 }
+
 .cards {
   display: flex;
   justify-content: center;
   gap: 40px;
   margin-top: 40px;
   flex-wrap: wrap;
+  margin-bottom: 5%;
   
 }
 
@@ -320,6 +320,185 @@ body {
   align-items: center;
   padding: 1rem;
 }
+
+
+
+
+
+.new-menu {
+    text-align: center;
+    padding: 10px 0px 10px; 
+    background: url('/fotos/ACHTERGRONDOMGEKEERD\ PC.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.new-menu h2 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-bottom: 50px;
+    font-family: 'Cormorant Garamond';
+    margin-top: 5%;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+
+.item {
+    width: 280px;
+    height: 350px;
+    background-color: #3b0d16;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4%;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    margin-bottom: 5%;
+}
+
+.item h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 15px 15px 5px 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+.item p {
+    font-size: 0.95rem;
+    color: #ddd;
+    margin: 0 15px 15px 15px;
+    line-height: 1.4;
+    font-family: 'Cormorant Garamond';
+}
+
+
+
+footer {
+  background-color: #0d0d0d;
+  color: #ffffff;
+  padding: 60px 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+}
+
+.logo img {
+  width: 200px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+footer h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+footer p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding-left: 18px;
+  position: relative;
+  display: inline-block;
+}
+footer ul li a:hover {
+   color: #b30059; 
+}
+
+footer ul li a::before {
+  content: "»";
+  position: absolute;
+  left: 0;
+  color: #ffffff;
+}
+
+.email-form {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.email-form input[type="email"] {
+  padding: 10px 12px;
+  border: none;
+  border-radius: 6px 0 0 6px;
+  font-size: 0.9rem;
+  flex: 1;
+  outline: none;
+}
+
+.email-form button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 0 6px 6px 0;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 26px;
+  margin-right: 25px; 
+  text-decoration: none;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #b30059;
+}
+
 
 
 
@@ -473,177 +652,3 @@ body {
 
 }
 
-
-
-
-.new-menu {
-    text-align: center;
-    padding: 60px 20px;
-    
-}
-
-.new-menu h2 {
-    font-size: 2.5rem;
-    letter-spacing: 2px;
-    color: #fff;
-    margin-bottom: 50px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.new-menu h2 span {
-    color: #49051f;
-}
-
-
-.menu-items {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 0 40px;
-}
-
-
-.item {
-    flex: 1 1 calc(33.333% - 40px); 
-    max-width: calc(33.333% - 40px);
-    background-color: #3b0d16;
-    border-radius: 0%;
-    padding: 20px;
-    text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-}
-
-
-.item img {
-    width: 100%;
-    border-radius: 0%;
-    margin-bottom: 15px;
-}
-
-
-.item h3 {
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    color: #fff;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.item p {
-    font-size: 0.95rem;
-    color: #ddd;
-    line-height: 1.4;
-}
-
-footer {
-  background-color: #0d0d0d;
-  color: #ffffff;
-  padding: 60px 40px;
-  font-family: 'Poppins', sans-serif;
-}
-
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.footer-col {
-  flex: 1;
-  min-width: 200px;
-}
-
-.logo img {
-  width: 200px;
-  max-width: 100%;
-  margin-bottom: 20px;
-}
-
-footer h4 {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 20px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-footer p {
-  font-size: 0.9rem;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-footer ul {
-  list-style: none;
-  padding: 0;
-}
-
-footer ul li a {
-  color: #ffffff;
-  text-decoration: none;
-  padding-left: 18px;
-  position: relative;
-  display: inline-block;
-}
-footer ul li a:hover {
-   color: #b30059; 
-}
-
-footer ul li a::before {
-  content: "»";
-  position: absolute;
-  left: 0;
-  color: #ffffff;
-}
-
-.email-form {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-}
-
-.email-form input[type="email"] {
-  padding: 10px 12px;
-  border: none;
-  border-radius: 6px 0 0 6px;
-  font-size: 0.9rem;
-  flex: 1;
-  outline: none;
-}
-
-.email-form button {
-  background-color: white;
-  color: black;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 0 6px 6px 0;
-  font-weight: bold;
-  font-size: 1.1rem;
-  cursor: pointer;
-}
-
-.social-icons {
-  margin-top: 20px;
-}
-
-.social-icons a {
-  color: white;
-  font-size: 26px;
-  margin-right: 25px; 
-  text-decoration: none;
-  display: inline-block;
-  transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-  color: #b30059;
-}
