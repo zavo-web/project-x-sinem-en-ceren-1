@@ -137,6 +137,12 @@ body {
   margin-bottom: 5%;
 }
 
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  
+}
+
 .card-image {
   position: relative;
   width: 100%;

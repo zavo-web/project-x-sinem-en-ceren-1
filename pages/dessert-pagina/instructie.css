@@ -159,7 +159,7 @@
   position: relative;
   flex: 1;
   min-width: 300px;
-  padding: rem 2rem;
+  padding: 2rem;
   z-index: 1; 
 }
 
@@ -167,8 +167,8 @@
   content: "";
   position: absolute;
   top: 1%;
-  left: 10%;
-  width: 50%;
+  left: 5%;
+  width: 55%;
   height: 100%;          
   background-color: #000000; 
   border-radius: 2rem;
@@ -184,30 +184,30 @@
 .ingredients ul {
   list-style: none;
   padding-left: 0;
-  margin-left: 20%;
-   font-size: 1.1rem;
+  margin-left: 10%;
+font-size: 1.1rem;
 }
 
 .ingredients h3 {
-    margin-left: 20%;
+    margin-left: 10%;
     font-size: 2.1rem;
     margin-top: 7%;
 }
 
 .benodigheden h4 {
-    margin-left: 20%;
-    margin-top: 10%;
+    margin-left: 10%;
+    margin-top: 5%;
     color:#5a0f27;
     font-size: 1.2em;   
 }
 .benodigheden{
-    margin-bottom: 10%;
+    margin-bottom: 8%;
    
 }
 
 .benodigheden ul {
     list-style: disc;
-    margin-left: 22%;
+    margin-left: 12%;
 }
 
 .instructies h3, .ingredients h3 {
@@ -220,6 +220,7 @@
 
 .instructies {
     margin-top: 4%;
+
 }
 .instructies h3{
     margin-left: -15%;
@@ -232,7 +233,7 @@
 .instructies ol {
   list-style: none; 
   padding-left: 0;  
-  margin-left: -15%;
+  margin-left: -25%;
   margin-right: 10%;
 }
 
