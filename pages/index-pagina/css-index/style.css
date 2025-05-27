@@ -122,10 +122,11 @@ body {
 }
 
 .hero-text h1 {
-  font-size: 5em;
+  font-size: 6em;
   font-family: 'Georgia', serif;
   margin-bottom: -10%;
   font-family: 'Cormorant Garamond';
+  font-weight: bold;
   
 }
 
@@ -153,6 +154,7 @@ body {
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
+
 
 .categories, .new-menu, .about {
   padding: 0px 20px;
@@ -484,7 +486,12 @@ footer ul li a::before {
   display: none;
 }
 
-
+.img-mobile {
+  display: none;
+}
+.img-desktop {
+  display: block;
+}
 
 
 @media (max-width: 768px) {
@@ -544,6 +551,14 @@ footer ul li a::before {
   .mobile-text p {
     font-size: 1.2em;
   }
+
+  .img-desktop {
+    display: none;
+  }
+  .img-mobile {
+    display: block;
+  }
+
 
   .cards {
     justify-content: center;
