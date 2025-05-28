@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  
   <div class="container">
     <aside class="sidebar">
       <a href="../../index.html">
@@ -42,13 +43,30 @@
         <a href="#">Over ons</a>
     </div>
     <div class="icons">
-        <a href="/likes.html" title="Favoriete desserts">
+        <a href="../likes-pagina/likes.html" title="Favoriete desserts">
       <i class="material-icons">favorite_border</i>
         </a>
       <i class="material-icons">account_circle</i>
     </div>
+    
+
+    
 
 </header>
+      <h2 class="mobile-title">Wat te eten?</h2>
+      <input type="text" class="mobile-search" placeholder="Zoek een dessert...">
+
+      <div class="mobile-filters">
+      <button class="filter-btn kleur1" data-type="taarten">Taarten</button>
+      <button class="filter-btn kleur2" data-type="ijs">Ijs desserten</button>
+      <button class="filter-btn kleur3" data-type="koekjes">Koekjes</button>
+      <button class="filter-btn kleur4" data-type="pudding">Pudding</button>
+      <button class="filter-btn kleur5" data-type="warm">Warme desserten</button>
+      <button class="filter-btn kleur6" data-type="gezond">Gezonde desserten</button>
+      <button class="filter-btn kleur7" data-type="makkelijk">Makkelijke</button>
+      <button class="filter-btn kleur8" data-type="snel">Snelle</button>
+      <button class="filter-btn kleur9" data-type="uitdagend">Uitdagende</button>
+      </div>
 
 
       <section class="banner">
@@ -315,58 +333,66 @@
   </div>
 
   <script>
-  // FILTER OP CHECKBOXEN
   const checkboxes = document.querySelectorAll('.filter');
-  const cards = document.querySelectorAll('.card');
+const buttons = document.querySelectorAll('.filter-btn');
+const cards = document.querySelectorAll('.card');
 
-  checkboxes.forEach(cb => {
-    cb.addEventListener('change', () => {
-      const activeTypes = Array.from(checkboxes)
-        .filter(c => c.checked)
-        .map(c => c.getAttribute('data-type'));
-
-      if (activeTypes.length === 0) {
-        cards.forEach(card => card.style.display = 'flex');
-      } else {
-        cards.forEach(card => {
-          const cardType = card.getAttribute('data-type') || '';
-          const cardTypes = cardType.split(' ');
-          const match = activeTypes.some(type => cardTypes.includes(type));
-          card.style.display = match ? 'flex' : 'none';
-        });
-      }
-    });
-  });
-
- 
-  const storedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
-
-  document.querySelectorAll('.favorite-icon').forEach((icon) => {
-    icon.addEventListener('click', () => {
-      const card = icon.closest('.card');
-      const dessertHTML = card.outerHTML;
-
-      const index = storedFavorites.indexOf(dessertHTML);
-      if (index === -1) {
-        storedFavorites.push(dessertHTML);
-        icon.textContent = 'favorite'; 
-      } else {
-        storedFavorites.splice(index, 1);
-        icon.textContent = 'favorite_border'; 
-      }
-
-      localStorage.setItem('favorites', JSON.stringify(storedFavorites));
-    });
-  });
-
-  
-  const iconBarFavorite = document.querySelector('.icons .material-icons:first-child');
-  if (iconBarFavorite) {
-    iconBarFavorite.addEventListener('click', () => {
-      window.location.href = 'favorieten.html';
+// Helper functie om filter toe te passen
+function applyFilter(activeTypes) {
+  if (activeTypes.length === 0) {
+    cards.forEach(card => card.style.display = 'flex');
+  } else {
+    cards.forEach(card => {
+      const cardType = card.getAttribute('data-type') || '';
+      const cardTypes = cardType.split(' ');
+      const match = activeTypes.some(type => cardTypes.includes(type));
+      card.style.display = match ? 'flex' : 'none';
     });
   }
+}
 
+// Luister naar checkbox veranderingen
+checkboxes.forEach(cb => {
+  cb.addEventListener('change', () => {
+    // Haal actieve types van checkboxen
+    const activeCheckboxTypes = Array.from(checkboxes)
+      .filter(c => c.checked)
+      .map(c => c.getAttribute('data-type'));
+
+    // Haal actieve types van buttons
+    const activeButtonTypes = Array.from(buttons)
+      .filter(b => b.classList.contains('active'))
+      .map(b => b.getAttribute('data-type'));
+
+    // Combineer actief van beide filters
+    const combinedActiveTypes = [...new Set([...activeCheckboxTypes, ...activeButtonTypes])];
+
+    applyFilter(combinedActiveTypes);
+  });
+});
+
+// Luister naar button clicks
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Toggle 'active' class
+    button.classList.toggle('active');
+
+    // Haal actieve types van checkboxen
+    const activeCheckboxTypes = Array.from(checkboxes)
+      .filter(c => c.checked)
+      .map(c => c.getAttribute('data-type'));
+
+    // Haal actieve types van buttons
+    const activeButtonTypes = Array.from(buttons)
+      .filter(b => b.classList.contains('active'))
+      .map(b => b.getAttribute('data-type'));
+
+    // Combineer actief van beide filters
+    const combinedActiveTypes = [...new Set([...activeCheckboxTypes, ...activeButtonTypes])];
+
+    applyFilter(combinedActiveTypes);
+  });
+});
 
 
 </script>

@@ -188,4 +188,211 @@ body {
   padding: 5%;
 }
 
+.main-content {
+  position: relative;
+}
 
+.mobile-title {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.mobile-filters {
+  display: none;
+}
+
+.back-icon {
+  display: none;
+}
+
+
+
+
+@media (max-width: 480px) {
+
+  body {
+    background-color:#1a1a1a;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .nav-links {
+    display: none;
+  }
+  .icons {
+    display: flex; 
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    gap: 10px;
+  }
+
+ .icons a {
+    display: none;
+  }
+
+
+
+   .mobile-title {
+    display: block;
+    text-align: left;
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.8rem;
+    margin-left: -10%;
+    margin-top: 20%;
+  }
+
+  .mobile-search {
+  display: block;
+  width: 80%;
+  padding: 3%;
+  border-radius: 20px;
+  border: none;
+  background: #ffffff;
+  color: #fff;
+  font-size: 1rem;
+  margin-left: -12%;
+
+}
+
+
+   .desserts {
+    margin-top: 5%; 
+    margin-left: -13%;   
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 4%; 
+    
+  }
+
+  .card {
+    width: 48%; 
+    margin-bottom: 4%;
+    background-color: #111;
+  }
+  
+
+.mobile-filters {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden; 
+  gap: 10px;
+  padding: 0 10px;  
+  margin-top: 5%;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10%;
+  margin-left: -15%;
+  white-space: nowrap;
+  height: auto;  
+  min-height: 60px;  
+  align-items: center;  
+}
+
+.filter-btn {
+  flex: 0 0 auto;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  cursor: pointer;
+  margin-bottom: 0;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.3rem;  
+  box-sizing: border-box;
+}
+
+
+.container, .sidebar, body, html {
+  overflow: visible !important;
+}
+
+
+
+.mobile-filters::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-btn.active {
+  background-color:rgb(50, 0, 0);
+  color: #ffffff;
+}
+
+.kleur1 {
+  background-color: #310000; 
+}
+
+.kleur2 {
+  background-color: #3a2c40; 
+}
+
+.kleur3 {
+  background-color: #9a727e; 
+}
+
+.kleur4 {
+  background-color: #53667d; 
+}
+
+.kleur5 {
+  background-color: #303d2f; 
+}
+
+.kleur6 {
+  background-color: #909364; 
+}
+
+.kleur7 {
+  background-color: #528a8a;
+}
+
+.kleur8 {
+  background-color: #3f2a30; 
+}
+
+.kleur9 {
+  background-color: #685a6e; 
+}
+
+
+
+
+
+
+.kleur1.active {
+  background-color: #360000;
+  color: white;
+}
+
+.kleur2.active {
+  background-color: #360000;
+  color: white;
+}
+
+.kleur3.active {
+  background-color: #360000;
+  color: white;
+}
+
+
+
+}
