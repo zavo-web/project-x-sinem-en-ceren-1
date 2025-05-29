@@ -258,4 +258,277 @@ font-size: 1.1rem;
  flex-shrink: 0;
 }
 
+.mobile-only {
+  display: none;
+}
+
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 1rem;
+}
+
+
+header nav {
+  display: flex;
+  gap: 2rem;
+}
+
+
+@media (max-width: 768px) {
+
+   header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 70vw;
+    max-width: 300px;
+    background-color: #171717;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+  }
+
+  header nav {
+    display: none;
+  }
+
+   .logo {
+    display: none;
+  }
+  
+   .search-profile input.search {
+    display: none; 
+  }
+ 
+   .search-profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    order: 2; 
+  }
+
+    #menu-toggle {
+    display: block;
+    order: -1;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding: 0;
+  }
+
+
+ 
+  header nav.show {
+    transform: translateX(0);
+  }
+
+
+   nav.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 75vw;
+    max-width: 300px;
+    background-color: #171717;
+    padding: 2rem 1rem;
+    transform: translateX(-110%);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    z-index: 1000;
+  }
+   nav.mobile-menu.open {
+    transform: translateX(0);
+  }
+
+  nav.mobile-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+
+
+  body.menu-open {
+    overflow: hidden;
+  }
+
+    .hero {
+    flex-direction: column;
+    margin: 0;         
+    padding: 0; 
+    background-color:#111;   
+  }
+
+  .hero img {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;        
+    padding: 0;        
+    display: block;    
+  }
+
+ .hero-text {
+  background-color:#1a1a1a;
+  margin: -2rem 2rem 1rem 1.1rem; 
+  padding: 1.2rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  color: white;
+  width: 75%;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  padding: 0.2rem;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+   padding: 0.1rem;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1a1a1a;
+  padding: 2rem;
+  color: #fff;
+  margin: 4%;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.ingredients::before {
+  display: none;    
+}
+
+.ingredients {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+
+
+.ingredients ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 5%;
+font-size: 1.1rem;
+}
+
+.ingredients h3 {
+    margin-left: 2%;
+    font-size: 2.1rem;
+    margin-top: 7%;
+}
+
+.benodigheden h4 {
+    margin-left: 3%;
+    margin-top: 5%;
+    color:#5a0f27;
+    font-size: 1.2em;   
+}
+.benodigheden{
+    margin-bottom: 8%;
+    margin-top: 20%;
+    
+   
+}
+
+.benodigheden ul {
+    list-style: disc;
+    margin-left: 12%;
+}
+
+.instructies h3, .ingredients h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #5a0f27;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.instructies {
+    margin-top: 4%;
+
+}
+.instructies h3{
+    margin-left: 5%;
+}
+
+
+.instructies ol li {
+  margin-bottom: 1rem;
+}
+.instructies ol {
+  list-style: none; 
+  padding-left: 0;  
+  margin-left: -4%;
+  margin-right: 2%;
+  margin-bottom: 4%;
+}
+
+.instructies li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.step-number {
+  text-align: center;
+  line-height: 3rem;
+  margin-right: 1rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;          
+  justify-content: center; 
+  gap: 0.6rem;
+  margin-top: 2rem;        
+}
+
+.buttons button {
+  flex: 1 1 auto;           
+  min-width: 40%;           
+  max-width: 48%;           
+  padding: 0.6rem 1rem;
+  margin: 0.5rem;
+  border: none;
+  background-color: #5a0f27;
+  color: white;
+  border-radius: 20px; 
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+
+
+}
 

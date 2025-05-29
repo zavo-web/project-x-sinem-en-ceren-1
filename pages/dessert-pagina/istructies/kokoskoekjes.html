@@ -28,6 +28,11 @@
                 <i class="material-icons">account_circle</i>
             </div>
         </div>
+
+         <button id="menu-toggle" aria-label="Menu openen">
+            <i class="material-icons">menu</i>
+        </button>
+        
     </header>
 
     <section class="hero">
@@ -79,5 +84,18 @@
             </ol>
         </div>
     </section>
+
+     <script>
+
+  const menuToggle = document.getElementById('menu-toggle');
+const nav = document.querySelector('nav'); // selecteer de bestaande nav
+
+menuToggle.addEventListener('click', () => {
+  nav.classList.toggle('mobile-menu');
+  nav.classList.toggle('open');
+  document.body.classList.toggle('menu-open');
+});
+
+</script>
 </body>
 </html> 
