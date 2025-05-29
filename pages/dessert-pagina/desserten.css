@@ -6,7 +6,6 @@ body, html {
 }
 
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   background: #0c0c0c;
   color: #fff;
@@ -133,13 +132,13 @@ body {
   gap: 3%;
   margin: 3% auto;
   width: 90%;
-  margin-left: 14%;
+  margin-left: 11%;
 }
 
 .card {
   background: #1a1a1a;
   border-radius: 10px;
-  width: 25%;
+  width: 27%;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -208,14 +207,39 @@ body {
   display: none;
 }
 
+.top-bar {
+  display: none;
+}
+
+.mobile-search {
+  display: none; 
+}
+
 
 
 
 @media (max-width: 480px) {
 
   body {
-    background-color:#1a1a1a;
+    background-color:#101010;
   }
+
+   .top-bar {
+    display: block;
+    margin-top: 10px;
+    margin-left: -24%;
+  }
+
+  .top-bar a {
+    color: #ffffff;
+    font-size: 4%;
+    text-decoration: none;
+  
+  }
+  .top-bar a i {
+  font-size: 2.3rem; 
+  color: #ffffff;
+}
 
   .banner {
     display: none;
@@ -229,15 +253,18 @@ body {
     display: none;
   }
   .icons {
-    display: flex; 
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    gap: 10px;
+  display: flex; 
+  position: absolute;
+  top: 3%;
+  right: 7%;
   }
 
- .icons a {
-    display: none;
+  .icons a {
+  display: none;
+  }
+
+  .icons i {
+  font-size: 2.6rem; 
   }
 
 
@@ -250,7 +277,7 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.8rem;
     margin-left: -10%;
-    margin-top: 20%;
+    margin-top: 5%;
   }
 
   .mobile-search {
@@ -268,31 +295,30 @@ body {
 
 
    .desserts {
-    margin-top: 5%; 
+    margin-top: 1%; 
     margin-left: -13%;   
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; 
     gap: 4%; 
+    margin-right: -20%;
     
   }
 
   .card {
-    width: 48%; 
-    margin-bottom: 4%;
-    background-color: #111;
-  }
-  
+  width: calc(52% - 4%); 
+}
+
 
 .mobile-filters {
   display: flex;
   overflow-x: auto;
   overflow-y: hidden; 
   gap: 10px;
-  padding: 0 10px;  
+  padding: 0 1px;  
   margin-top: 5%;
-  width: 100%;
+  width: 113%;
   box-sizing: border-box;
   margin-bottom: 10%;
   margin-left: -15%;
@@ -395,4 +421,9 @@ body {
 
 
 
+}
+
+
+.container, .sidebar, body, html {
+  overflow: visible !important;
 }
