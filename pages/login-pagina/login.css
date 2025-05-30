@@ -50,11 +50,6 @@ h2 {
   color: white;
 }
 
-h3 {
-  font-size: 1.2rem;
-  color: white;
-}
-
 form {
   display: flex;
   flex-direction: column;
@@ -107,4 +102,16 @@ button:hover {
 p {
   font-size: 0.9rem;
   color: white;
+}
+
+.registreer-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #ffcccb; /* een lichtere kleur dan wit bijvoorbeeld */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.registreer-link:hover {
+  text-decoration: underline;
 }
