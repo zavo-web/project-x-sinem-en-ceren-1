@@ -27,6 +27,15 @@
                 <i class="material-icons">account_circle</i>
             </div>
         </div>
+
+        <button id="menu-toggle" aria-label="Menu openen">
+            <i class="material-icons">menu</i>
+        </button>
+
+        <div class="header-search">
+            <input type="text" class="search-mobile" placeholder="Waar ben je op zoek?">
+        </div>
+
     </header>
 
     <section class="hero">
@@ -77,7 +86,17 @@
                     Laat minimaal 4 uur afgedekt opstijven in de koelkast. Garneer de charlotte met de partjes mango en de granaatappelpitjes. Neem uit de springvorm en serveer met het lint erom.</li>
             </ol>
         </div>
-
     </section>
+    
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const nav = document.querySelector('nav'); // selecteer de bestaande nav
+        
+        menuToggle.addEventListener('click', () => {
+          nav.classList.toggle('mobile-menu');
+          nav.classList.toggle('open');
+          document.body.classList.toggle('menu-open');
+        });
+    </script>
 </body>
 </html> 

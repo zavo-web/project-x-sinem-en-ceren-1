@@ -32,6 +32,10 @@
             <i class="material-icons">menu</i>
         </button>
 
+        <div class="header-search">
+            <input type="text" class="search-mobile" placeholder="Waar ben je op zoek?">
+        </div>
+
     </header>
 
     <section class="hero">
@@ -91,20 +95,17 @@
             </ol>
         </div>
     </section>
-
-
-     <script>
-
-  const menuToggle = document.getElementById('menu-toggle');
-const nav = document.querySelector('nav'); // selecteer de bestaande nav
-
-menuToggle.addEventListener('click', () => {
-  nav.classList.toggle('mobile-menu');
-  nav.classList.toggle('open');
-  document.body.classList.toggle('menu-open');
-});
-
-</script>
+         
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const nav = document.querySelector('nav'); // selecteer de bestaande nav
+        
+        menuToggle.addEventListener('click', () => {
+          nav.classList.toggle('mobile-menu');
+          nav.classList.toggle('open');
+          document.body.classList.toggle('menu-open');
+        });
+    </script>
 
 </body>
 </html>
