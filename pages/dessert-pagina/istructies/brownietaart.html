@@ -32,6 +32,14 @@
             <i class="material-icons">menu</i>
         </button>
 
+        <nav class="mobile-menu" id="mobile-nav">
+            <a href="#">Home</a>
+            <a href="#">Bestellen</a>
+            <a href="#">Bonus</a>
+            <a href="#">Contact</a>
+            <a href="#">Over ons</a>
+        </nav>
+
         <div class="header-search">
             <input type="text" class="search-mobile" placeholder="Waar ben je op zoek?">
         </div>
@@ -96,16 +104,22 @@
         </div>
     </section>
          
-    <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const nav = document.querySelector('nav'); // selecteer de bestaande nav
-        
-        menuToggle.addEventListener('click', () => {
-          nav.classList.toggle('mobile-menu');
-          nav.classList.toggle('open');
-          document.body.classList.toggle('menu-open');
-        });
-    </script>
-
+   
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+      const mobileNav = document.getElementById('mobile-nav');
+      const menuIcon = menuToggle.querySelector('i');
+      let menuOpen = false;
+    
+      menuToggle.addEventListener('click', () => {
+        menuOpen = !menuOpen;
+    
+        // Toggle menu zichtbaar
+        mobileNav.classList.toggle('open', menuOpen);
+    
+        // Verander icoon van 'menu' naar 'close' en omgekeerd
+        menuIcon.textContent = menuOpen ? 'close' : 'menu';
+      });
+</script>
 </body>
 </html>

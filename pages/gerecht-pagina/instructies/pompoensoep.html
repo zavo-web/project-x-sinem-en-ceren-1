@@ -32,10 +32,18 @@
             <i class="material-icons">menu</i>
         </button>
 
+        <nav class="mobile-menu" id="mobile-nav">
+            <a href="#">Home</a>
+            <a href="#">Bestellen</a>
+            <a href="#">Bonus</a>
+            <a href="#">Contact</a>
+            <a href="#">Over ons</a>
+        </nav>
+
         <div class="header-search">
             <input type="text" class="search-mobile" placeholder="Waar ben je op zoek?">
         </div>
-        
+
     </header>
 
     <section class="hero">
@@ -93,8 +101,24 @@
                     erboven. Breng aan de kook en laat 5 min. koken, roer regelmatig. Pureer met de staafmixer tot een gladde soep en voeg ⅔ van de room toe. Breng op smaak met peper en eventueel zout.</li>
                 <li><span class="step-number">5</span>Serveer de soep in kommen, verdeel de rest van de kookroom er in een sierlijke swirl over. Verdeel de rest van de chutney over de soep. Serveer met de camembertboompjes.</li>
             </ol>
-
         </div>
     </section>
+    
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+      const mobileNav = document.getElementById('mobile-nav');
+      const menuIcon = menuToggle.querySelector('i');
+      let menuOpen = false;
+    
+      menuToggle.addEventListener('click', () => {
+        menuOpen = !menuOpen;
+    
+        // Toggle menu zichtbaar
+        mobileNav.classList.toggle('open', menuOpen);
+    
+        // Verander icoon van 'menu' naar 'close' en omgekeerd
+        menuIcon.textContent = menuOpen ? 'close' : 'menu';
+      });
+</script>
 </body>
 </html>
