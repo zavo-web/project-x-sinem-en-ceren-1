@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/footer.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://www.flaticon.com/?k=1731866416334&log-in=google" rel="stylesheet">
+    
     <link href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -17,22 +17,40 @@
 <body>
     <header>
         <div class="mobile-header">
-            <div class="menu-icon">☰</div>
-            <input type="text" class="search-bar" placeholder="Zoeken...">
-            <div class="material-icons">account_circle</div>
-        </div>
+
+  <button id="menu-toggle" aria-label="Menu openen">
+    <i class="material-icons">menu</i>
+  </button>
+
+  
+  <input type="text" class="search-mobile" placeholder="Zoeken...">
 
 
+  <div class="icons">
+    <i class="material-icons">account_circle</i>
+  </div>
+</div>
+
+
+        <nav class="mobile-menu" id="mobile-nav">
+            <a href="#">Bestellen</a>
+            <a href="#">Bonus</a>
+            <a href="#">Contact</a>
+            <a href="#">Over ons</a>
+        </nav>
+
+    
+ 
         <div class="navbar desktop-header">
             <div class="logo">
                 <img src="/fotos/Logo.png" alt="Culinaria logo">
             </div>
 
             <nav class="nav-left">
-                <a href="#bestellen">Bestellen</a>
-                <a href="#Bonus">Bonus</a>
-                <a href="#Contact">Contact</a>
-                <a href="#OverOns">Over ons</a>
+                <a href="../project-x-sinem-en-ceren-1/workshop/bestellen.html">Bestellen</a>
+                <a href="../project-x-sinem-en-ceren-1/workshop/bonus.html">Bonus</a>
+                <a href="../project-x-sinem-en-ceren-1/workshop/contact.html">Contact</a>
+                <a href="../project-x-sinem-en-ceren-1/workshop/over_ons.html">Over ons</a>
             </nav>
 
             <div class="nav-right">
@@ -40,6 +58,7 @@
                 <a href="pages/login.html" class="login-button">Log in / sign up</a>
             </div>
         </div>
+
 
 
         <div class="hero-banner">
@@ -67,19 +86,19 @@
         <h2>WAT TE ETEN?</h2>
         <p>Makkelijk, snel en vooral lekker.</p>
         <div class="cards">
-            <a href="/desserten.html" class="card">
+            <a href="/pages/dessert-pagina/dessertenn.html" class="card">
                 <img src="/fotos/taartt.png" alt="Desserts" class="img-desktop">
                 <img src="/fotos/desserten gsm.png" alt="Desserts" class="img-mobile">
                 <div class="label">Desserten</div>
             </a>
 
-            <a href="/gerechten.html" class="card lower">
+            <a href="/pages/gerecht-pagina/gerechten.html" class="card lower">
                 <img src="/fotos/steak.png" alt="Gerechten" class="img-desktop">
                 <img src="/fotos/gerechten gsm.png" alt="Gerechten" class="img-mobile">
                 <div class="label">Gerechten</div>
             </a>
 
-            <a href="/dranken.html" class="card">
+            <a href="/pages/drank-pagina/dranken.html" class="card">
                 <img src="/fotos/drinken.png" alt="Dranken" class="img-desktop">
                 <img src="/fotos/dranken gsm.png" alt="Dranken" class="img-mobile">
                 <div class="label">Dranken</div>
@@ -143,18 +162,18 @@
                     <li><a href="#">Onze blog</a></li>
                     <li><a href="#">Onze Gallerij</a></li>
                     <li><a href="#">FAQ’s</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="../project-x-sinem-en-ceren-1/workshop/contact.html">Contact</a></li>
                 </ul>
             </div>
 
             <div class="footer-col">
                 <h4>Onze menu</h4>
                 <ul>
-                    <li><a href="#">Ontbijt</a></li>
-                    <li><a href="#">Lunch</a></li>
-                    <li><a href="#">Avondmaal</a></li>
-                    <li><a href="../dessert-pagina/">Dessert</a></li>
-                    <li><a href="">Dranken</a></li>
+                    <li><a href="../project-x-sinem-en-ceren-1/pages/gerecht-pagina/gerechten.html">Ontbijt</a></li>
+                    <li><a href="../project-x-sinem-en-ceren-1/pages/gerecht-pagina/gerechten.html">Lunch</a></li>
+                    <li><a href="../project-x-sinem-en-ceren-1/pages/gerecht-pagina/gerechten.html">Avondmaal</a></li>
+                    <li><a href="../project-x-sinem-en-ceren-1/pages/dessert-pagina/dessertenn.html">Dessert</a></li>
+                    <li><a href="../project-x-sinem-en-ceren-1/pages/drank-pagina/dranken.html">Dranken</a></li>
                 </ul>
             </div>
 
@@ -167,5 +186,22 @@
             </div>
         </div>
     </footer>
+    
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+      const mobileNav = document.getElementById('mobile-nav');
+      const menuIcon = menuToggle.querySelector('i');
+      let menuOpen = false;
+    
+      menuToggle.addEventListener('click', () => {
+        menuOpen = !menuOpen;
+    
+        // Toggle menu zichtbaar
+        mobileNav.classList.toggle('open', menuOpen);
+    
+        // Verander icoon van 'menu' naar 'close' en omgekeerd
+        menuIcon.textContent = menuOpen ? 'close' : 'menu';
+      });
+</script>
 </body>
 </html>

@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <title>Drankenpagina</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="../dessert-pagina/desserten.css">
+    <link rel="stylesheet" href="../drank-pagina/dranken.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <div class="container">
         <aside class="sidebar">
-            <img src="/fotos/Logo.png" alt="logo" class="logo">
+            <a href="../../index.html">
+                <img src="../../fotos/Logo.png" alt="logo" class="logo">
+            </a>
             <h3>Soorten dranken</h3>
             <input type="text" placeholder="Zoek drank..." class="filter-zoekbalk">
             <ul>
@@ -60,7 +63,7 @@
                 </div>
             </header>
 
-            <h2 class="mobile-title">Wat te eten?</h2>
+            <h2 class="mobile-title">Wat te drinken?</h2>
             <input type="text" class="mobile-search" placeholder="Zoek een drankje...">
 
             <div class="mobile-filters">
@@ -303,7 +306,7 @@
 
     <script>
         // FILTER OP CHECKBOXEN
-          const checkboxes = document.querySelectorAll('.filter');
+        const checkboxes = document.querySelectorAll('.filter');
         const buttons = document.querySelectorAll('.filter-btn');
         const cards = document.querySelectorAll('.card');
         
@@ -363,6 +366,7 @@
             applyFilter(combinedActiveTypes);
           });
         });
+
     </script>
 </body>
 </html>
