@@ -1,10 +1,10 @@
+<!DOCTYPE html> 
+<html lang="nl"> 
 
-<!DOCTYPE html>
-<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koolhydraatarme koekjes</title>
+    <title>tartetartin</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../istructies/instructie.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -12,7 +12,10 @@
 
 <body>
     <header>
-        <img src="/fotos/Logo.png" alt="logo" class="logo">
+        <a href="../dessertenn.html">
+            <img src="/fotos/Logo.png" alt="logo" class="logo">
+        </a>
+
         <nav>
             <a href="#">Bestellen</a>
             <a href="#">Bonus</a>
@@ -28,7 +31,7 @@
                 <i class="material-icons">account_circle</i>
             </div>
         </div>
-        
+
         <button id="menu-toggle" aria-label="Menu openen">
             <i class="material-icons">menu</i>
         </button>
@@ -44,10 +47,7 @@
         <div class="header-search">
             <input type="text" class="search-mobile" placeholder="Waar ben je op zoek?">
         </div>
-
-
-
-    </header>
+    </header> 
 
     <section class="hero">
         <img src="https://static.ah.nl/static/recepten/img_RAM_PRD197235_1224x900_JPG.jpg" alt="Koolhydraatarme koekjes">
@@ -55,8 +55,12 @@
             <h2>Ananastarte tatin met chocolademousse en frambozencoulis</h2>
             <p>Friszure ananas, framboos en pure chocolademousse (die je in recordtijd maakt): van dit dessert raakt iedereen ondersteboven.</p>
             <div class="info">
-                <p>⌚ 30 min. bereiden / 35 min. oventijd / 10 min. wachten</p>
-                <p>🌿 575 kcal</p>
+                <div class="info-item">
+                    <span class="material-icons">schedule</span> 30 min. bereiden / 35 min. oventijd / 10 min. wachten
+                </div>
+                <div class="info-item">
+                    <span class="material-icons">local_fire_department</span> 575 kcal
+                </div>
             </div>
             <div class="buttons">
                 <button>taart</button>
@@ -107,21 +111,21 @@
         </div>
     </section>
 
-<script>
-    const menuToggle = document.getElementById('menu-toggle');
-      const mobileNav = document.getElementById('mobile-nav');
-      const menuIcon = menuToggle.querySelector('i');
-      let menuOpen = false;
-    
-      menuToggle.addEventListener('click', () => {
-        menuOpen = !menuOpen;
-    
-        // Toggle menu zichtbaar
-        mobileNav.classList.toggle('open', menuOpen);
-    
-        // Verander icoon van 'menu' naar 'close' en omgekeerd
-        menuIcon.textContent = menuOpen ? 'close' : 'menu';
-      });
-</script>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+          const mobileNav = document.getElementById('mobile-nav');
+          const menuIcon = menuToggle.querySelector('i');
+          let menuOpen = false;
+        
+          menuToggle.addEventListener('click', () => {
+            menuOpen = !menuOpen;
+        
+            // Toggle menu zichtbaar
+            mobileNav.classList.toggle('open', menuOpen);
+        
+            // Verander icoon van 'menu' naar 'close' en omgekeerd
+            menuIcon.textContent = menuOpen ? 'close' : 'menu';
+          });
+    </script>
 </body>
 </html>

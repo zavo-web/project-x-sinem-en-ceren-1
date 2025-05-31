@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verse muntthee met salie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../dessert-pagina/istructies/instructie.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="../../drank-pagina/dranken.html">
+            <img src="/fotos/Logo.png" alt="logo" class="logo">
+        </a>
+
+        <nav>
+            <a href="../../bestel-pagina/bestellen.html">Bestellen</a>
+            <a href="../../bonus_pagina/bonus.html">Bonus</a>
+            <a href="../../registreren-pagina/registreren.html">Contact</a>
+            <a href="../../over-ons/over_ons.html">Over ons</a>
+        </nav>
+
+        <div class="search-profile">
+            <input type="text" class="search" placeholder="Zoeken...">
+            <div class="icons">
+                <a href="/likes.html" title="Favoriete desserts">
+                    <i class="material-icons">favorite_border</i>
+                </a>
+                <i class="material-icons">account_circle</i>
+            </div>
+        </div>
+
+        <button id="menu-toggle" aria-label="Menu openen">
+            <i class="material-icons">menu</i>
+        </button>
+
+        <nav class="mobile-menu" id="mobile-nav">
+            <a href="/index.html">Home</a>
+            <a href="../../bestel-pagina/bestellen.html">Bestellen</a>
+            <a href="../../bonus_pagina/bonus.html">Bonus</a>
+            <a href="../../registreren-pagina/registreren.html">Contact</a>
+            <a href="../../over-ons/over_ons.html">Over ons</a>
+        </nav>
+
+        <div class="header-search">
+            <input type="text" class="search-mobile" placeholder="Waar ben je op zoek?">
+        </div>
+    </header>
+
+    <section class="hero">
+        <img src="https://static.ah.nl/static/recepten/img_RAM_PRD172020_1224x900_JPG.jpg" alt="Verse muntthee met salie">
+        <div class="hero-text">
+            <h2>Verse muntthee met salie</h2>
+            <p>Geef je verse muntthee een upgrade met verse salie. Dit is je nieuwe klassieker.</p>
+            <div class="info">
+                <div class="info-item">
+                    <span class="material-icons">schedule</span> 5 min. bereiden
+                </div>
+            </div>
+            <div class="buttons">
+                <button>thee</button>
+                <button>warm</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="ingredients">
+            <h3>Ingrediënten</h3>
+            <ul>
+                <li>5 gram verse salie</li>
+                <li>15 gram verse munt</li>
+                <li>800 ml kokend water</li>
+            </ul>
+            <div class="benodigheden">
+                <h4>Dit heb je nodig:</h4>
+                <ul>
+                    <li>theeglas</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="instructies">
+            <h3>Aan de slag</h3>
+            <ol>
+                <li><span class="step-number">1</span>Pluk de blaadjes van de salie en munt. Verdeel over de theeglazen of doe in een theepot. Giet er het kokend water over en laat 3 min. trekken.</li>
+            </ol>
+        </div>
+    </section>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+          const mobileNav = document.getElementById('mobile-nav');
+          const menuIcon = menuToggle.querySelector('i');
+          let menuOpen = false;
+        
+          menuToggle.addEventListener('click', () => {
+            menuOpen = !menuOpen;
+        
+            // Toggle menu zichtbaar
+            mobileNav.classList.toggle('open', menuOpen);
+        
+            // Verander icoon van 'menu' naar 'close' en omgekeerd
+            menuIcon.textContent = menuOpen ? 'close' : 'menu';
+          });
+    </script>
+</body>
+</html>

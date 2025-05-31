@@ -58,14 +58,14 @@
 .nav-left {
   grid-column: 2;
   display: flex;
-  gap: 80px;
+  gap: 7rem;
   justify-content: center;
 }
 
 .nav-left a {
   text-decoration: none;
   color: white;
-  font-size: 20px;
+  font-size: 1.5rem;
   font-family: 'Cormorant Garamond';
   transition: color 0.3s ease;
 }
@@ -86,10 +86,10 @@
 .heart-button {
   background: none;
   border: none;
-  font-size: 20px;
   cursor: pointer;
   color: white;
 }
+
 
 .login-button {
   background-color: #5a0f27;
@@ -237,15 +237,15 @@
 }
 
 .over-ons-afbeelding img {
-  width: 80%;
+  width: 70%;
   border-radius: 12px;
-  margin-left: 25%;
+  margin-left: 30%;
 }
 
 
 .categories {
   padding: 10px 0px 10px;
-  background-image: url("/fotos/ACHTERGROND\ PC.jpg");
+  background-image: none;
   background-size: cover;
   background-position: center;
   padding: 2rem 1rem;
@@ -310,7 +310,7 @@
 .new-menu {
     text-align: center;
     padding: 10px 0px 10px; 
-    background: url('/fotos/ACHTERGRONDOMGEKEERD\ PC.jpg') no-repeat center center;
+    background: none;
     background-size: cover;
     position: relative;
     z-index: 1;
@@ -539,7 +539,7 @@ footer ul li a::before {
 
 
 
-@media (max-width: 380px) {
+@media (max-width: 430px) {
   .desktop-header {
     display: none;
   }

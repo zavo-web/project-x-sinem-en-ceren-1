@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frozen whipped coffee</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../dessert-pagina/istructies/instructie.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="../../drank-pagina/dranken.html">
+            <img src="/fotos/Logo.png" alt="logo" class="logo">
+        </a>
+
+        <nav>
+            <a href="../../bestel-pagina/bestellen.html">Bestellen</a>
+            <a href="../../bonus_pagina/bonus.html">Bonus</a>
+            <a href="../../registreren-pagina/registreren.html">Contact</a>
+            <a href="../../over-ons/over_ons.html">Over ons</a>
+        </nav>
+
+        <div class="search-profile">
+            <input type="text" class="search" placeholder="Zoeken...">
+            <div class="icons">
+                <a href="/likes.html" title="Favoriete desserts">
+                    <i class="material-icons">favorite_border</i>
+                </a>
+                <i class="material-icons">account_circle</i>
+            </div>
+        </div>
+
+        <button id="menu-toggle" aria-label="Menu openen">
+            <i class="material-icons">menu</i>
+        </button>
+
+        <nav class="mobile-menu" id="mobile-nav">
+            <a href="/index.html">Home</a>
+            <a href="../../bestel-pagina/bestellen.html">Bestellen</a>
+            <a href="../../bonus_pagina/bonus.html">Bonus</a>
+            <a href="../../registreren-pagina/registreren.html">Contact</a>
+            <a href="../../over-ons/over_ons.html">Over ons</a>
+        </nav>
+
+        <div class="header-search">
+            <input type="text" class="search-mobile" placeholder="Waar ben je op zoek?">
+        </div>
+    </header>
+
+    <section class="hero">
+        <img src="https://static.ah.nl/static/recepten/img_RAM_PRD202459_1224x900_JPG.jpg" alt="Frozen whipped coffee">
+        <div class="hero-text">
+            <h2>Frozen whipped coffee</h2>
+            <p>Deze frozen whipped coffee is een heerlijke variatie op de dalgona koffie. Perfect voor een warme lente- of zomerdag.</p>
+            <div class="info">
+                <div class="info-item">
+                    <span class="material-icons">schedule</span> 15 min. bereiden / 4 uur wachten
+                </div>
+                <div class="info-item">
+                    <span class="material-icons">local_fire_department</span> 155 kcal
+                </div>
+            </div>
+            <div class="buttons">
+                <button>koffie</button>
+                <button>feestelijk</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="ingredients">
+            <h3>Ingrediënten</h3>
+            <ul>
+                <li>15 gram espresso-oploskoffie</li>
+                <li>100 gram fijne kristalsuiker</li>
+                <li>120 ml heet water</li>
+                <li>20 ijsblokjes</li>
+                <li>800 ml volle melk</li>
+            </ul>
+            <div class="benodigheden">
+                <h4>Dit heb je nodig:</h4>
+                <ul>
+                    <li>handmixer</li>
+                    <li>lage diepvriesbak met deksel</li>
+                    <li>ijsbolletjeslepel</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="instructies">
+            <h3>Aan de slag</h3>
+            <ol>
+                <li><span class="step-number">1</span> Meng de oploskoffie met de suiker en het hete water 5 min. met de handmixer tot een stevig en romig mengsel.</li>
+                <li><span class="step-number">2</span> Schep in een diepvriesbak, doe de deksel erop en zet minimaal 4 uur in de vriezer.</li>
+                <li><span class="step-number">3</span> Haal de whipped coffee uit de vriezer en laat 5 min. op temperatuur komen. Verdeel ondertussen de ijsblokjes over glazen en schenk de melk eroverheen. Schep met de ijsschep 2 bolletjes koffie-ijs erop.</li>
+            </ol>
+        </div>
+    </section>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+          const mobileNav = document.getElementById('mobile-nav');
+          const menuIcon = menuToggle.querySelector('i');
+          let menuOpen = false;
+        
+          menuToggle.addEventListener('click', () => {
+            menuOpen = !menuOpen;
+        
+            // Toggle menu zichtbaar
+            mobileNav.classList.toggle('open', menuOpen);
+        
+            // Verander icoon van 'menu' naar 'close' en omgekeerd
+            menuIcon.textContent = menuOpen ? 'close' : 'menu';
+          });
+    </script>
+</body>
+</html>

@@ -25,9 +25,16 @@
     }
 
     .logo {
-    width: 4%;
-     margin-bottom: 2%;
-    }
+  height: 50px;
+  width: auto;
+  margin: 0;
+}
+
+header a img.logo {
+  display: block;
+}
+
+    
 
     .search-profile {
     display: flex;
@@ -69,6 +76,29 @@
       font-size: 2rem;
       color: rgb(255, 255, 255);
     }
+
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin-top: 10%;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.info-item .material-icons {
+  font-size: 14px;
+  vertical-align: middle;
+  margin-right: 4px;
+  color: #ffffff;
+}
+
 
     .hero {
   display: flex;
@@ -114,12 +144,7 @@
 
     
 
-    .info {
-    margin-top: 3rem;
-    font-size: 1rem;
-    text-align: center;
-    opacity: 0.8;
-    }
+
 
     .buttons {
     display: flex;
@@ -311,6 +336,107 @@ font-size: 1.1rem;
 }
 
 
+
+@media (min-width: 768px) and (max-width: 770px) {
+
+   html {
+    font-size: 90%; 
+  }
+
+  header {
+    padding: 0.8rem 1rem;
+  }
+
+  header nav a {
+    font-size: 1rem;
+    margin: 0 1rem;
+  }
+
+  .search {
+    width: 13rem;
+    font-size: 0.9rem;
+    margin-right: 0.7rem;
+  }
+
+  .icons i {
+    font-size: 1.5rem;
+  }
+
+  .hero-text {
+    margin-top: 5%;
+  }
+
+  .hero-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+
+
+  .info {
+  margin-top: 2rem;    
+  font-size: 1rem;
+  text-align: center;
+  opacity: 0.8;
+  }
+
+  .buttons {
+  display: flex;
+  justify-content: center; 
+  gap: 0.1rem;               
+  margin-top: 1rem;    
+  margin-bottom: 3rem;    
+  }
+
+  .buttons button {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+
+
+
+  
+  .ingredients ul {
+    font-size: 1rem;
+  }
+
+  .ingredients h3,
+  .instructies h3 {
+    font-size: 1.4rem;
+  }
+
+  .step-number {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    margin-right: 1rem;
+  }
+
+  .instructies ol {
+    margin-left: -25%;
+    margin-right: 7%;
+  }
+
+  .ingredients::before {
+    left: 3%;
+    width: 65%;
+  }
+
+  .content {
+    padding: 1rem;
+    margin: 2%;
+  }
+
+  .hero {
+    margin: 2%;
+  }
+
+
+}
+
  
 
 
@@ -348,9 +474,14 @@ font-size: 1.1rem;
     display: none;
   }
 
-   .logo {
-    display: none;
-  }
+  .logo {
+  display: none;
+}
+
+header a img.logo {
+  display: none;
+}
+
   
    .search-profile input.search {
     display: none; 
@@ -424,7 +555,7 @@ font-size: 1.1rem;
     font-size: 1rem;
     background-color: #fff;
     color: #000;
-    margin-left: 20%;
+    margin-left: 10%;
   }
   
 

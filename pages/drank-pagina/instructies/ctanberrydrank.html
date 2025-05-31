@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cranberrydrank met mango-ijsblokjes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../dessert-pagina/istructies/instructie.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="../../drank-pagina/dranken.html">
+            <img src="/fotos/Logo.png" alt="logo" class="logo">
+        </a>
+
+        <nav>
+            <a href="../../bestel-pagina/bestellen.html">Bestellen</a>
+            <a href="../../bonus_pagina/bonus.html">Bonus</a>
+            <a href="../../registreren-pagina/registreren.html">Contact</a>
+            <a href="../../over-ons/over_ons.html">Over ons</a>
+        </nav>
+
+        <div class="search-profile">
+            <input type="text" class="search" placeholder="Zoeken...">
+            <div class="icons">
+                <a href="/likes.html" title="Favoriete desserts">
+                    <i class="material-icons">favorite_border</i>
+                </a>
+                <i class="material-icons">account_circle</i>
+            </div>
+        </div>
+
+        <button id="menu-toggle" aria-label="Menu openen">
+            <i class="material-icons">menu</i>
+        </button>
+
+        <nav class="mobile-menu" id="mobile-nav">
+            <a href="/index.html">Home</a>
+            <a href="../../bestel-pagina/bestellen.html">Bestellen</a>
+            <a href="../../bonus_pagina/bonus.html">Bonus</a>
+            <a href="../../registreren-pagina/registreren.html">Contact</a>
+            <a href="../../over-ons/over_ons.html">Over ons</a>
+        </nav>
+
+        <div class="header-search">
+            <input type="text" class="search-mobile" placeholder="Waar ben je op zoek?">
+        </div>
+    </header>
+
+    <section class="hero">
+        <img src="https://static.ah.nl/static/recepten/img_RAM_PRD189829_1224x900_JPG.jpg" alt="Cranberrydrank met mango-ijsblokjes">
+        <div class="hero-text">
+            <h2>Cranberrydrank met mango-ijsblokjes</h2>
+            <p>Lopen de temperaturen weer op? Probeer dit verkoelende drankje met het verfrissende van cranberry’s en het zacht-zoete van mango. Wat een combinatie!</p>
+            <div class="info">
+                <div class="info-item">
+                    <span class="material-icons">schedule</span> 10 min. bereiden / 4 uur wachten
+                </div>
+                <div class="info-item">
+                    <span class="material-icons">local_fire_department</span> 140 kcal
+                </div>
+            </div>
+            <div class="buttons">
+                <button>friesdrank</button>
+                <button>feestelijk</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="ingredients">
+            <h3>Ingrediënten</h3>
+            <ul>
+                <li>275 g - verse mangostukjes</li>
+                <li>14 blaadjes - verse munt</li>
+                <li>1 l - cranberry drink</li>
+            </ul>
+            <div class="benodigheden">
+                <h4>Dit heb je nodig:</h4>
+                <ul>
+                    <li>staafmixer</li>
+                    <li>ijsblokjesvorm</li>
+                    <li>longdrinkglazen</li>
+                    <li>rietjes</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="instructies">
+            <h3>Aan de slag</h3>
+            <ol>
+                <li><span class="step-number">1</span>Pureer de blokjes mango in de hoge beker van de staafmixer tot een gladde puree. Verdeel de puree over de holten van de ijsblokjesvorm en steek er de blaadjes munt in. Leg minimaal 4 uur in de vriezer.</li>
+                <li><span class="step-number">2</span>Verdeel de mango-ijsblokjes over de longdrinkglazen en schenk de cranberrydrank erover. Serveer direct, met een rietje.</li>
+            </ol>
+        </div>
+    </section>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+          const mobileNav = document.getElementById('mobile-nav');
+          const menuIcon = menuToggle.querySelector('i');
+          let menuOpen = false;
+        
+          menuToggle.addEventListener('click', () => {
+            menuOpen = !menuOpen;
+        
+            // Toggle menu zichtbaar
+            mobileNav.classList.toggle('open', menuOpen);
+        
+            // Verander icoon van 'menu' naar 'close' en omgekeerd
+            menuIcon.textContent = menuOpen ? 'close' : 'menu';
+          });
+    </script>
+</body>
+</html>

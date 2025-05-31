@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horchata</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../dessert-pagina/istructies/instructie.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="../../drank-pagina/dranken.html">
+            <img src="/fotos/Logo.png" alt="logo" class="logo">
+        </a>
+
+        <nav>
+            <a href="../../bestel-pagina/bestellen.html">Bestellen</a>
+            <a href="../../bonus_pagina/bonus.html">Bonus</a>
+            <a href="../../registreren-pagina/registreren.html">Contact</a>
+            <a href="../../over-ons/over_ons.html">Over ons</a>
+        </nav>
+
+        <div class="search-profile">
+            <input type="text" class="search" placeholder="Zoeken...">
+            <div class="icons">
+                <a href="/likes.html" title="Favoriete desserts">
+                    <i class="material-icons">favorite_border</i>
+                </a>
+                <i class="material-icons">account_circle</i>
+            </div>
+        </div>
+
+        <button id="menu-toggle" aria-label="Menu openen">
+            <i class="material-icons">menu</i>
+        </button>
+
+        <nav class="mobile-menu" id="mobile-nav">
+            <a href="/index.html">Home</a>
+            <a href="../../bestel-pagina/bestellen.html">Bestellen</a>
+            <a href="../../bonus_pagina/bonus.html">Bonus</a>
+            <a href="../../registreren-pagina/registreren.html">Contact</a>
+            <a href="../../over-ons/over_ons.html">Over ons</a>
+        </nav>
+
+        <div class="header-search">
+            <input type="text" class="search-mobile" placeholder="Waar ben je op zoek?">
+        </div>
+    </header>
+
+    <section class="hero">
+        <img src="https://static.ah.nl/static/recepten/img_RAM_PRD181293_1224x900_JPG.jpg" alt="Horchata">
+        <div class="hero-text">
+            <h2>Horchata</h2>
+            <p>Horchata is een drank die vanuit West- en Noord-Afrika naar Spanje en Portugal kwam en vanuit daar meereisde naar Latijns-Amerika. In deze variant (die goed is voor 1,5 L) maken we het met rijst en amandelen.</p>
+            <div class="info">
+                <div class="info-item">
+                    <span class="material-icons">schedule</span> 15 min. bereiden / 1 uur wachten
+                </div>
+                <div class="info-item">
+                    <span class="material-icons">local_fire_department</span> 165 kcal
+                </div>
+            </div>
+            <div class="buttons">
+                <button>frisdrank</button>
+                <button>makkelijk</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="ingredients">
+            <h3>Ingrediënten</h3>
+            <ul>
+                <li>1 kaneelstokje</li>
+                <li>150 gram witte rijst</li>
+                <li>100 gram ongebrande amandelen</li>
+                <li>1 liter kraanwater</li>
+                <li>0.5 vanillestokje</li>
+                <li>200 ml koffiemelk</li>
+                <li>300 gram gecondenseerde melk in blik</li>
+            </ul>
+            <div class="benodigheden">
+                <h4>Dit heb je nodig:</h4>
+                <ul>
+                    <li>blender</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="instructies">
+            <h3>Aan de slag</h3>
+            <ol>
+                <li><span class="step-number">1</span>Breek het kaneelstokje in grove stukken. Verhit een grote koekenpan zonder olie of boter en rooster de rijst met de kaneel op middelhoog vuur in ca. 8 min. lichtbruin. Roer regelmatig.</li>
+                <li><span class="step-number">2</span>Doe de rijst met de kaneel, de amandelen en het water in een kom en laat minimaal 1 uur weken.</li>
+                <li><span class="step-number">3</span>Snijd het vanillestokje open en schraap met een mespunt het merg eruit. Haal de grootste stukken kaneel uit de kom en doe de rijst en amandelen met het water in een blender. Voeg de koffiemelk, gecondenseerde
+                    melk en het vanillemerg toe en mix in ca. 4 min. glad. Giet de horchata door een fijne zeef en drink met ijsklontjes.</li>
+            </ol>
+        </div>
+    </section>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+          const mobileNav = document.getElementById('mobile-nav');
+          const menuIcon = menuToggle.querySelector('i');
+          let menuOpen = false;
+        
+          menuToggle.addEventListener('click', () => {
+            menuOpen = !menuOpen;
+        
+            // Toggle menu zichtbaar
+            mobileNav.classList.toggle('open', menuOpen);
+        
+            // Verander icoon van 'menu' naar 'close' en omgekeerd
+            menuIcon.textContent = menuOpen ? 'close' : 'menu';
+          });
+    </script>
+</body>
+</html>
