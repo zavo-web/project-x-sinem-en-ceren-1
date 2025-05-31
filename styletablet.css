@@ -1,0 +1,402 @@
+ 
+@media (max-width: 769px) {
+ 
+.hero-text {
+  top: 27%;
+  left: 7%;
+  max-width: 30%;
+  z-index: 5;
+  text-align: left;
+}
+
+.hero-text h1 {
+  font-size: 3.5em;
+  font-family: 'Georgia', serif;
+  margin-bottom: -10%;
+  font-family: 'Cormorant Garamond';
+
+}
+
+.hero-text .sub {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  
+}
+
+.hero-text p {
+  font-size: 0.8rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+
+
+.hero-text button {
+  background-color: white;
+  color: #5b003b;
+  padding: 0px 25px;
+  font-size: 1em;
+  border: none;
+  border-radius: 25px;
+  height: 2rem;
+}
+
+
+.logo img {
+  height: 50px; 
+  width: auto;
+}
+
+
+.nav-left {
+  grid-column: 2;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-right: 30%;
+  margin-top: 5%;
+}
+
+.nav-left a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-family: 'Cormorant Garamond';
+  transition: color 0.3s ease;
+}
+
+.nav-left a:hover {
+  color:#5a0f27;
+}
+
+
+
+.heart-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.login-button {
+  padding: 1% 16px;
+  height: 2rem;
+}
+
+
+
+.categories h2 {
+  font-family: 'Cormorant Garamond';
+  font-size: 2em;
+
+}
+
+.categories p {
+    font-size: 0.8rem;
+}
+
+.cards, .menu-items {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.card, .item {
+  background: #222;
+  
+  width: 250px;
+}
+
+.card img, .item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+
+.categories {
+  padding: 2rem 0rem 1rem;
+  background-image: none;
+  background-color: #151515;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 0rem;
+  margin-top: 7%;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+  margin-left: 8%;
+  
+}
+
+
+
+.card {
+  background: transparent;
+  padding: 0;
+  text-align: center;
+  cursor: pointer;
+  width: 30%;
+}
+
+.card img {
+  width: 10rem;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+
+.card:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.card .label {
+  margin-top: 15px;
+  font-size: 1.2em;
+  font-weight:500;
+  margin-right: 25%;
+}
+
+.card.lower {
+  margin-top: 3%;
+}
+
+
+
+.over-ons {
+  padding: 30px 10%;
+  flex-wrap: wrap;
+  height: 10%;
+  background-color: #0e0e0e;
+}
+
+.over-ons-tekst {
+  font-size: 1em;
+}
+
+.over-ons-tekst h2 {
+  font-size: 2em;
+}
+
+.over-ons-tekst p {
+  margin-top: 1.5em;
+  line-height: 1.6;
+  font-family: 'Cormorant Garamond';
+}
+
+.over-ons-button {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 1% 8%;
+  background-color: rgb(65, 10, 21);
+  color:#e6f0e6;
+  border-radius: 30px;
+  text-decoration: none;
+  height: 2rem;
+  transition: background-color 0.3s ease;
+  margin-bottom: 5%;
+}
+
+.over-ons-button:hover {
+  background-color: #d8d8d8;
+}
+
+.over-ons-afbeelding {
+  flex: 1;
+  min-width: 20px;
+}
+
+.over-ons-afbeelding img {
+  width: 100%;
+  border-radius: 1.2rem;
+  margin-left: 25%;
+}
+
+
+
+ .new-menu {
+    background-image: none;
+    padding: 2rem 2rem; 
+    background-color:#151515;
+    
+  }
+
+ .menu-items {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 1.5rem;
+  scroll-snap-type: x mandatory;
+  padding-left: 10px; 
+  justify-content: flex-start; 
+  
+}
+
+
+
+.item {
+  flex: 0 0 70%; 
+  max-width: 15rem; 
+  height: 20rem; 
+  scroll-snap-align: start;
+  background-color: #3b0d16;
+  border-radius: 4%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  
+}
+
+
+
+.menu-items {
+  padding-bottom: 5%;
+  
+}
+
+
+::-webkit-scrollbar{
+  overflow-y: scroll;
+  display: none;
+}
+
+
+.item h3 {
+  font-size: 0.8em;
+  margin: 5%;
+
+}
+
+.item p {
+  font-size: 0.8em;
+  margin-bottom: 15%;
+}
+
+.new-menu h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    margin-top: 5%;
+}
+
+
+
+
+footer {
+  background-color: #0e0e0e;
+  color: #ffffff;
+  padding: 60px 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+
+}
+
+.logo-tablet img {
+  width: 200px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+footer h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+footer p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  padding-left: 20%;
+}
+
+footer ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding-left: 18px;
+  position: relative;
+  display: inline-block;
+}
+footer ul li a:hover {
+   color: #3b0d16; 
+}
+
+footer ul li a::before {
+  content: "»";
+  position: absolute;
+  left: 0;
+  color: #ffffff;
+}
+
+.email-form {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.email-form input[type="email"] {
+  padding: 10px 12px;
+  border: none;
+  border-radius: 6px 0 0 6px;
+  font-size: 0.9rem;
+  flex: 1;
+  outline: none;
+}
+
+.email-form button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 0 6px 6px 0;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 26px;
+  margin-right: 25px; 
+  text-decoration: none;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+
+}

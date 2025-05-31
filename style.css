@@ -394,7 +394,7 @@ footer {
   min-width: 200px;
 }
 
-.logo img {
+.logo-tablet img {
   width: 200px;
   max-width: 100%;
   margin-bottom: 20px;
@@ -537,7 +537,9 @@ footer ul li a::before {
 
 
 
-@media (max-width: 768px) {
+
+
+@media (max-width: 380px) {
   .desktop-header {
     display: none;
   }
