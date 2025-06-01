@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Jouw Winkelmand</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../winkelmand_bestel/winkelmand_bestel.css">
+</head>
+<body>
+  <div class="header-container">
+  <h1>Jouw winkelmand</h1>
+  <div id="totaal-prijs-header">Totaal: €0.00</div>
+</div>
+  <div class="grid" id="winkelmand-container"></div>
+
+
+ <script>
+    function toonWinkelmand() {
+      const winkelmand = JSON.parse(localStorage.getItem('winkelmand')) || [];
+      let totaal = 0;
+
+      const container = document.getElementById('winkelmand-container');
+      container.innerHTML = '';
+
+      winkelmand.forEach((item, index) => {
+        totaal += item.prijs;
+
+        const div = document.createElement('div');
+        div.classList.add('blok');
+        div.innerHTML = `
+          <img src="${item.afbeelding || 'images/fallback.jpg'}" alt="${item.naam}">
+          <div class="blok-info">
+            <div class="tekst-links">
+              <h4>${item.naam}</h4>
+              <p>€${item.prijs.toFixed(2)}</p>
+            </div>
+            <button class="verwijder-knop" onclick="verwijderUitMand(${index})">🗑️</button>
+          </div>
+        `;
+        container.appendChild(div);
+      });
+
+      
+      const totaalDiv = document.getElementById('totaal-prijs-header');
+      totaalDiv.textContent = `Totaal: €${totaal.toFixed(2)}`;
+    }
+
+    function verwijderUitMand(index) {
+      let winkelmand = JSON.parse(localStorage.getItem('winkelmand')) || [];
+      winkelmand.splice(index, 1);
+      localStorage.setItem('winkelmand', JSON.stringify(winkelmand));
+      toonWinkelmand();
+    }
+
+    document.addEventListener('DOMContentLoaded', toonWinkelmand);
+  </script>
+
+
+</body>
+</html>
