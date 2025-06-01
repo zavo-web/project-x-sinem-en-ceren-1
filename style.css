@@ -565,6 +565,9 @@ footer ul li a::before {
     display: none;
   }
   
+  a {
+  text-decoration: none;
+}
    .search-profile input.search {
     display: none; 
   }
