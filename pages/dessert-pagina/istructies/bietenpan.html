@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bietenpannenkoekjes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../istructies/instructie.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="../../dessert-pagina/dessertenn.html">
+            <img src="/fotos/Logo.png" alt="logo" class="logo">
+        </a>
+
+        <nav>
+            <a href="../../bestel-pagina/bestellen.html">Bestellen</a>
+            <a href="../../bonus_pagina/bonus.html">Bonus</a>
+            <a href="../../registreren-pagina/registreren.html">Contact</a>
+            <a href="../../over-ons/over_ons.html">Over ons</a>
+        </nav>
+
+        <div class="search-profile">
+            <input type="text" class="search" placeholder="Zoeken...">
+            <div class="icons">
+                <a href="/likes.html" title="Favoriete desserts">
+                    <i class="material-icons">favorite_border</i>
+                </a>
+                <i class="material-icons">account_circle</i>
+            </div>
+        </div>
+
+        <button id="menu-toggle" aria-label="Menu openen">
+            <i class="material-icons">menu</i>
+        </button>
+
+        <nav class="mobile-menu" id="mobile-nav">
+            <a href="/index.html">Home</a>
+            <a href="../../bestel-pagina/bestellen.html">Bestellen</a>
+            <a href="../../bonus_pagina/bonus.html">Bonus</a>
+            <a href="../../registreren-pagina/registreren.html">Contact</a>
+            <a href="../../over-ons/over_ons.html">Over ons</a>
+        </nav>
+
+        <div class="header-search">
+            <input type="text" class="search-mobile" placeholder="Waar ben je op zoek?">
+        </div>
+
+    </header>
+
+    <section class="hero">
+        <img src="https://static.ah.nl/static/recepten/img_RAM_PRD131122_1024x748_JPG.jpg" alt="Bietenpannenkoekjes">
+        <div class="hero-text">
+            <h2>Bietenpannenkoekjes</h2>
+            <p>Bieten + pannenkoek = een fijn ontbijtje. Dus met deze pannenkoeken met biet in het beslag heb je dubbel geluk.</p>
+
+            <div class="info">
+                <div class="info-item">
+                    <span class="material-icons">schedule</span>20 min. bereiden
+                </div>
+                <div class="info-item">
+                    <span class="material-icons">local_fire_department</span> 95 kcal
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button>koekjes</button>
+                <button>snel</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <section class="content">
+            <div class="ingredients">
+                <h3>Ingrediënten</h3>
+                <ul>
+                    <li>250 gram gekookte mini rode bieten</li>
+                    <li>2 bananen</li>
+                    <li>3 middelgrote eieren</li>
+                    <li>1 theelepel gemalen kaneel</li>
+                    <li>1 theelepel vanillearoma</li>
+                    <li>2 eetlepels arachideolie</li>
+                    <li>50 gram AH Biologisch extra 
+                        <br> pure chocolade 72%</li>
+                </ul>
+            </div>
+
+            <div class="instructies">
+                <h3>Aan de slag</h3>
+                <ol>
+                    <li><span class="step-number">1</span> Doe de biet, de helft van de bananen, de eieren, kaneel en het vanillearoma in de smoothiemaker en blend tot een beslag.</li>
+                    <li><span class="step-number">2</span> Verhit ½ el olie in een grote koekenpan op middelhoog vuur en bak 2 à 3 pannenkoekjes van ca. Ø 8 cm. Draai het vuur laag en bak 6 min. Keer halverwege. Herhaal met de rest van het beslag. Houd de
+                        pannenkoekjes eventueel warm onder aluminiumfolie.</li>
+                    <li><span class="step-number">3</span> Doe de chocolade in een kom en hang deze in een pan met bijna kokend water. Zorg ervoor dat de kom het water niet raakt (au bain-marie). Smelt de chocolade al roerend.</li>
+                    <li><span class="step-number">4</span> Snijd de rest van de banaan in dunne plakjes. Verdeel de pannenkoekjes als stapels over borden. Verdeel de bananenplakjes erover en besprenkel met de chocolade.</li>
+                </ol>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2025 Culniara. Alle rechten voorbehouden.</p>
+            <nav class="footer-nav">
+                <a href="/index.html">Home</a> |
+                <a href="../../registreren-pagina/registreren.html">Contact</a> |
+                <a href="../../privacy/privacy.html">Privacyverklaring</a>
+            </nav>
+        </footer>
+
+
+        <script>
+            const menuToggle = document.getElementById('menu-toggle');
+              const mobileNav = document.getElementById('mobile-nav');
+              const menuIcon = menuToggle.querySelector('i');
+              let menuOpen = false;
+            
+              menuToggle.addEventListener('click', () => {
+                menuOpen = !menuOpen;
+            
+                // Toggle menu zichtbaar
+                mobileNav.classList.toggle('open', menuOpen);
+            
+                // Verander icoon van 'menu' naar 'close' en omgekeerd
+                menuIcon.textContent = menuOpen ? 'close' : 'menu';
+              });
+        </script>
+</body>
+</html>
