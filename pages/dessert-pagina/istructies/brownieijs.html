@@ -8,16 +8,19 @@
     <link rel="stylesheet" href="../istructies/instructie.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-
 <body>
     <header>
-        <img src="/fotos/Logo.png" alt="logo" class="logo">
+        <a href="../../dessert-pagina/dessertenn.html">
+            <img src="/fotos/Logo.png" alt="logo" class="logo">
+        </a>
+
         <nav>
-            <a href="">Bestellen</a>
-            <a href="#">Bonus</a>
-            <a href="#">Contact</a>
-            <a href="#">Over ons</a>
+            <a href="../../bestel-pagina/bestellen.html">Bestellen</a>
+            <a href="../../bonus_pagina/bonus.html">Bonus</a>
+            <a href="../../registreren-pagina/registreren.html">Contact</a>
+            <a href="../../over-ons/over_ons.html">Over ons</a>
         </nav>
+
         <div class="search-profile">
             <input type="text" class="search" placeholder="Zoeken...">
             <div class="icons">
@@ -33,18 +36,16 @@
         </button>
 
         <nav class="mobile-menu" id="mobile-nav">
-            <a href="#">Home</a>
-            <a href="#">Bestellen</a>
-            <a href="#">Bonus</a>
-            <a href="#">Contact</a>
-            <a href="#">Over ons</a>
+            <a href="/index.html">Home</a>
+            <a href="../../bestel-pagina/bestellen.html">Bestellen</a>
+            <a href="../../bonus_pagina/bonus.html">Bonus</a>
+            <a href="../../registreren-pagina/registreren.html">Contact</a>
+            <a href="../../over-ons/over_ons.html">Over ons</a>
         </nav>
 
         <div class="header-search">
             <input type="text" class="search-mobile" placeholder="Waar ben je op zoek?">
         </div>
-
-
 
     </header>
 
@@ -53,10 +54,16 @@
         <div class="hero-text">
             <h2>Warme brownies met cookie dough ijs</h2>
             <p>Het ultieme nagerecht: warme brownie met ijs.</p>
+
             <div class="info">
-                <p>⌚ 10 min. bereiden / 20 min. oventijd</p>
-                <p>🌿 450 kcal</p>
+                <div class="info-item">
+                    <span class="material-icons">schedule</span> 10 min. bereiden / 20 min. oventijd
+                </div>
+                <div class="info-item">
+                    <span class="material-icons">local_fire_department</span> 450 kcal
+                </div>
             </div>
+
             <div class="buttons">
                 <button>Warm</button>
                 <button>Uitdagend</button>
@@ -81,7 +88,6 @@
             </div>
         </div>
 
-
         <div class="instructies">
             <h3>Aan de slag</h3>
             <ol>
@@ -93,21 +99,30 @@
         </div>
     </section>
 
-<script>
-    const menuToggle = document.getElementById('menu-toggle');
-      const mobileNav = document.getElementById('mobile-nav');
-      const menuIcon = menuToggle.querySelector('i');
-      let menuOpen = false;
-    
-      menuToggle.addEventListener('click', () => {
-        menuOpen = !menuOpen;
-    
-        // Toggle menu zichtbaar
-        mobileNav.classList.toggle('open', menuOpen);
-    
-        // Verander icoon van 'menu' naar 'close' en omgekeerd
-        menuIcon.textContent = menuOpen ? 'close' : 'menu';
-      });
-</script>
+    <footer class="footer">
+        <p>&copy; 2025 Culniara. Alle rechten voorbehouden.</p>
+        <nav class="footer-nav">
+            <a href="/index.html">Home</a> |
+            <a href="../../registreren-pagina/registreren.html">Contact</a> |
+            <a href="../../privacy/privacy.html">Privacyverklaring</a>
+        </nav>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+          const mobileNav = document.getElementById('mobile-nav');
+          const menuIcon = menuToggle.querySelector('i');
+          let menuOpen = false;
+        
+          menuToggle.addEventListener('click', () => {
+            menuOpen = !menuOpen;
+        
+            // Toggle menu zichtbaar
+            mobileNav.classList.toggle('open', menuOpen);
+        
+            // Verander icoon van 'menu' naar 'close' en omgekeerd
+            menuIcon.textContent = menuOpen ? 'close' : 'menu';
+          });
+    </script>
 </body>
-</html>  
+</html>

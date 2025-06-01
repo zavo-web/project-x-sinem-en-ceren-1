@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Culniara</title>
@@ -12,34 +12,28 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Montserrat:wght@300&display=swap" rel="stylesheet">
-</head>
-
+</head> 
 <body>
     <header>
         <div class="mobile-header">
 
-  <button id="menu-toggle" aria-label="Menu openen">
-    <i class="material-icons">menu</i>
-  </button>
+            <button id="menu-toggle" aria-label="Menu openen">
+                <i class="material-icons">menu</i>
+            </button>
 
-  
-  <input type="text" class="search-mobile" placeholder="Zoeken...">
+            <input type="text" class="search-mobile" placeholder="Zoeken...">
 
-
-  <div class="icons">
-    <i class="material-icons">account_circle</i>
-  </div>
-</div>
-
-
+            <div class="icons">
+                <i class="material-icons">account_circle</i>
+            </div>
+        </div>
+ 
         <nav class="mobile-menu" id="mobile-nav">
             <a href="#">Bestellen</a>
             <a href="#">Bonus</a>
             <a href="#">Contact</a>
             <a href="#">Over ons</a>
         </nav>
-
-    
  
         <div class="navbar desktop-header">
             <div class="logo">
@@ -59,7 +53,6 @@
             </div>
         </div>
 
-       
 
         <div class="hero-banner">
             <img src="/fotos/Banner (2).jpg" alt="Banner" class="banner-image desktop-banner">
@@ -104,9 +97,8 @@
                 <div class="label">Dranken</div>
             </a>
         </div>
-    </section>
-
-
+    </section> 
+ 
     <section class="over-ons">
         <div class="over-ons-tekst">
             <h2>OVER ONS</h2>
@@ -187,22 +179,22 @@
             </div>
         </div>
     </footer>
-    
-<script>
-    const menuToggle = document.getElementById('menu-toggle');
-      const mobileNav = document.getElementById('mobile-nav');
-      const menuIcon = menuToggle.querySelector('i');
-      let menuOpen = false;
-    
-      menuToggle.addEventListener('click', () => {
-        menuOpen = !menuOpen;
-    
-        // Toggle menu zichtbaar
-        mobileNav.classList.toggle('open', menuOpen);
-    
-        // Verander icoon van 'menu' naar 'close' en omgekeerd
-        menuIcon.textContent = menuOpen ? 'close' : 'menu';
-      });
-</script>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+          const mobileNav = document.getElementById('mobile-nav');
+          const menuIcon = menuToggle.querySelector('i');
+          let menuOpen = false;
+        
+          menuToggle.addEventListener('click', () => {
+            menuOpen = !menuOpen;
+        
+            // Toggle menu zichtbaar
+            mobileNav.classList.toggle('open', menuOpen);
+        
+            // Verander icoon van 'menu' naar 'close' en omgekeerd
+            menuIcon.textContent = menuOpen ? 'close' : 'menu';
+          });
+    </script>
 </body>
 </html>

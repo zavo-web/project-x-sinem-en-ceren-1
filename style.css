@@ -103,8 +103,10 @@
 }
 
 .categories h2 {
-  font-family: 'Cormorant Garamond';
-  font-size: 2.2em;
+  font-size: 1.8rem;
+  font-weight:600;
+  letter-spacing: 2px;
+  color: #fff;
 
 }
 
@@ -319,11 +321,11 @@
 
 
 .new-menu h2 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
+    font-weight:600;
     letter-spacing: 2px;
     color: #fff;
     margin-bottom: 50px;
-    font-family: 'Cormorant Garamond';
     margin-top: 5%;
 }
 
@@ -896,7 +898,7 @@ footer ul li a::before {
   }
 
   .footer-col {
-    flex: 0 0 45%; /* Twee kolommen naast elkaar */
+    flex: 0 0 45%;
     min-width: unset;
   }
 
