@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegan ube nicecream met pistache</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../istructies/instructie.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="../../dessert-pagina/dessertenn.html">
+            <img src="/fotos/Logo.png" alt="logo" class="logo">
+        </a>
+
+        <nav>
+            <a href="../../bestel-pagina/bestellen.html">Bestellen</a>
+            <a href="../../bonus_pagina/bonus.html">Bonus</a>
+            <a href="../../registreren-pagina/registreren.html">Contact</a>
+            <a href="../../over-ons/over_ons.html">Over ons</a>
+        </nav>
+
+        <div class="search-profile">
+            <input type="text" class="search" placeholder="Zoeken...">
+            <div class="icons">
+                <a href="/likes.html" title="Favoriete desserts">
+                    <i class="material-icons">favorite_border</i>
+                </a>
+                <i class="material-icons">account_circle</i>
+            </div>
+        </div>
+
+        <button id="menu-toggle" aria-label="Menu openen">
+            <i class="material-icons">menu</i>
+        </button>
+
+        <nav class="mobile-menu" id="mobile-nav">
+            <a href="/index.html">Home</a>
+            <a href="../../bestel-pagina/bestellen.html">Bestellen</a>
+            <a href="../../bonus_pagina/bonus.html">Bonus</a>
+            <a href="../../registreren-pagina/registreren.html">Contact</a>
+            <a href="../../over-ons/over_ons.html">Over ons</a>
+        </nav>
+
+        <div class="header-search">
+            <input type="text" class="search-mobile" placeholder="Waar ben je op zoek?">
+        </div>
+
+    </header>
+
+    <section class="hero">
+        <img src="https://static.ah.nl/static/recepten/img_128104_1024x748_JPG.jpg" alt="Vegan ube nicecream met pistache">
+        <div class="hero-text">
+            <h2>Vegan ube nicecream met pistache</h2>
+            <p>Deze nicecream maken we ube, de paarse zoete aardappel uit Azië.</p>
+
+            <div class="info">
+                <div class="info-item">
+                    <span class="material-icons">schedule</span> 15 min. bereiden / 40 min. oventijd / 4 uur 20 min. wachten
+                </div>
+                <div class="info-item">
+                    <span class="material-icons">local_fire_department</span> 275 kcal
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button>ijs</button>
+                <button>gezond</button>
+                <button>uitdagend</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="ingredients">
+            <h3>Ingrediënten</h3>
+            <ul>
+                <li>400 gram ube</li>
+                <li>50 gram gepelde ongezouten pistachenoten</li>
+                <li>0.5 theelepel Souq rozenwater</li>
+                <li>2 eetlepels ahornsiroop</li>
+                <li>150 gram plantaardige kokos gurt ongezoet</li>
+            </ul>
+        </div>
+
+        <div class="instructies">
+            <h3>Aan de slag</h3>
+            <ol>
+                <li>Verwarm de oven voor op 200 °C. Rooster de ongeschilde aardappelen 30-40 min. in het midden van de oven tot ze gaar zijn. Halveer ze en laat 20 min. afkoelen. Schep het vruchtvlees uit de schil en doe in de keukenmachine.</li>
+                <li>Rooster in een koekenpan zonder boter of olie de pistachenoten 4 min. Laat afkoelen en hak grof. Voeg rozenwater, ahornsiroop en gurt toe aan de keukenmachine en mix tot een gladde massa. Schep het mengsel in een metalen brownievorm (20
+                    x 20 cm), schep de helft van de pistachenoten erdoor en zet minimaal 4 uur afgedekt in de vriezer. Roer na 2 uur goed om.</li>
+                <li>Neem het ijs uit de vriezer en schep met een lepel of ijsschep mooie bollen in een diep bord of kommetje. Bestrooi met de rest van de pistachenoten.</li>
+            </ol>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Culniara. Alle rechten voorbehouden.</p>
+        <nav class="footer-nav">
+            <a href="/index.html">Home</a> |
+            <a href="../../registreren-pagina/registreren.html">Contact</a> |
+            <a href="../../privacy/privacy.html">Privacyverklaring</a>
+        </nav>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+          const mobileNav = document.getElementById('mobile-nav');
+          const menuIcon = menuToggle.querySelector('i');
+          let menuOpen = false;
+        
+          menuToggle.addEventListener('click', () => {
+            menuOpen = !menuOpen;
+        
+            // Toggle menu zichtbaar
+            mobileNav.classList.toggle('open', menuOpen);
+        
+            // Verander icoon van 'menu' naar 'close' en omgekeerd
+            menuIcon.textContent = menuOpen ? 'close' : 'menu';
+          });
+    </script>
+</body>
+</html>

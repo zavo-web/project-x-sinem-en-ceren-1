@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pudding met Nederlandse bessen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../istructies/instructie.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="../../dessert-pagina/dessertenn.html">
+            <img src="/fotos/Logo.png" alt="logo" class="logo">
+        </a>
+
+        <nav>
+            <a href="../../bestel-pagina/bestellen.html">Bestellen</a>
+            <a href="../../bonus_pagina/bonus.html">Bonus</a>
+            <a href="../../registreren-pagina/registreren.html">Contact</a>
+            <a href="../../over-ons/over_ons.html">Over ons</a>
+        </nav>
+
+        <div class="search-profile">
+            <input type="text" class="search" placeholder="Zoeken...">
+            <div class="icons">
+                <a href="/likes.html" title="Favoriete desserts">
+                    <i class="material-icons">favorite_border</i>
+                </a>
+                <i class="material-icons">account_circle</i>
+            </div>
+        </div>
+
+        <button id="menu-toggle" aria-label="Menu openen">
+            <i class="material-icons">menu</i>
+        </button>
+
+        <nav class="mobile-menu" id="mobile-nav">
+            <a href="/index.html">Home</a>
+            <a href="../../bestel-pagina/bestellen.html">Bestellen</a>
+            <a href="../../bonus_pagina/bonus.html">Bonus</a>
+            <a href="../../registreren-pagina/registreren.html">Contact</a>
+            <a href="../../over-ons/over_ons.html">Over ons</a>
+        </nav>
+
+        <div class="header-search">
+            <input type="text" class="search-mobile" placeholder="Waar ben je op zoek?">
+        </div>
+
+    </header>
+
+    <section class="hero">
+        <img src="https://static.ah.nl/static/recepten/img_RAM_PRD149267_1024x748_JPG.jpg" alt="Pudding met Nederlandse bessen">
+        <div class="hero-text">
+            <h2>Pudding met Nederlandse bessen</h2>
+            <p>Met deze Hollandse bessenpudding zorg jij voor een spectaculair nagerecht!</p>
+
+            <div class="info">
+                <div class="info-item">
+                    <span class="material-icons">schedule</span> 10 min. bereiden / 3 uur wachten
+                </div>
+                <div class="info-item">
+                    <span class="material-icons">local_fire_department</span> 95 kcal
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button>makkelijk</button>
+                <button>snel</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="ingredients">
+            <h3>Ingrediënten</h3>
+            <ul>
+                <li>7 blaadjes gelatine</li>
+                <li>1 vanillestokje</li>
+                <li>50 gram kristalsuiker</li>
+                <li>200 ml koud water</li>
+                <li>150 gram rode bessen</li>
+                <li>250 gram verse frambozen</li>
+                <li>150 gram verse blauwe bessen</li>
+                <li>200 ml vlierbloesemsiroop</li>
+            </ul>
+        </div>
+
+        <div class="instructies">
+            <h3>Aan de slag</h3>
+            <ol>
+                <li><span class="step-number">1</span> Week de blaadjes gelatine in een kom met koud water. Halveer ondertussen de vanillepeul en haal met een scherp mes het merg eruit. Doe samen met de suiker en de helft van het koude water in een steelpan
+                    en breng op hoog vuur aan de kook. Roer tot de suiker is opgelost en zet het vuur uit.</li>
+                <li><span class="step-number">2</span> Ris ondertussen de rode bessen van de steeltjes. Verdeel de helft van de rode bessen met de helft van de frambozen over de onderkant van de vorm. Verdeel daar de helft van de blauwe bessen over. Herhaal
+                    met de rest van alle bessen tot de vorm vol zit.</li>
+                <li><span class="step-number">3</span> Doe de siroop samen met de rest van het koude water bij het suikermengsel. Knijp de gelatine uit en voeg toe aan de pan. Roer goed tot de gelatine is opgelost en de vanille verdeeld is. Voeg het vanillemengsel
+                    toe aan de vorm en laat 15 min. afkoelen tot kamertemperatuur. Zet vervolgens voorzichtig in de koelkast om volledig op te stijven. Dit duurt, afhankelijk van de vorm, ca. 2½ tot 3½ uur.</li>
+                <li><span class="step-number">4</span> Laat voor het serveren de gootsteen vollopen met een laag heet water die bijna even hoog is als de puddingvorm. Zet daar voorzichtig de vorm 30 sec. in (zorg dat er geen water in de vorm loopt). Leg een
+                    bord op de vorm en draai hem om. De pudding laat nu vanzelf los.</li>
+            </ol>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Culniara. Alle rechten voorbehouden.</p>
+        <nav class="footer-nav">
+            <a href="/index.html">Home</a> |
+            <a href="../../registreren-pagina/registreren.html">Contact</a> |
+            <a href="../../privacy/privacy.html">Privacyverklaring</a>
+        </nav>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+          const mobileNav = document.getElementById('mobile-nav');
+          const menuIcon = menuToggle.querySelector('i');
+          let menuOpen = false;
+        
+          menuToggle.addEventListener('click', () => {
+            menuOpen = !menuOpen;
+        
+            // Toggle menu zichtbaar
+            mobileNav.classList.toggle('open', menuOpen);
+        
+            // Verander icoon van 'menu' naar 'close' en omgekeerd
+            menuIcon.textContent = menuOpen ? 'close' : 'menu';
+          });
+    </script>
+</body>
+</html>

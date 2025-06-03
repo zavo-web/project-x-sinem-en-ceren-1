@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Drankenpagina</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../drank-pagina/dranken.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <a href="../../index.html">
+                <img src="../../fotos/Logo.png" alt="logo" class="logo">
+            </a>
+            <h3>Soorten dranken</h3>
+            <input type="text" placeholder="Zoek drank..." class="filter-zoekbalk">
+            <ul>
+                <li>
+                    <input type="checkbox" class="filter" data-type="frisdrank"> Frisdranken</li>
+                <li>
+                    <input type="checkbox" class="filter" data-type="koffie"> Koffie & Espresso</li>
+                <li>
+                    <input type="checkbox" class="filter" data-type="thee"> Thee</li>
+                <li>
+                    <input type="checkbox" class="filter" data-type="smoothie"> Smoothies</li>
+                <li>
+                    <input type="checkbox" class="filter" data-type="warm"> Warme dranken</li>
+                <li>
+                    <input type="checkbox" class="filter" data-type="alcoholvrij"> Alcoholvrije cocktails</li>
+            </ul>
+            <h3>Op basis van</h3>
+            <ul>
+                <li>
+                    <input type="checkbox" class="filter" data-type="makkelijk"> Makkelijke dranken</li>
+                <li>
+                    <input type="checkbox" class="filter" data-type="snel"> Snelle dranken</li>
+                <li>
+                    <input type="checkbox" class="filter" data-type="feestelijk"> Feestelijke dranken</li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header class="nav">
+                <div class="nav-links">
+                    <a href="#">Bestellen</a>
+                    <a href="#">Bonus</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Over ons</a>
+                </div>
+                <div class="icons">
+                    <a href="../likes-pagina/likes.html" title="Favoriete desserts">
+                        <i class="material-icons">favorite_border</i>
+                    </a>
+                    <i class="material-icons">account_circle</i>
+                </div>
+
+                <div class="top-bar">
+                    <a href="../../index.html" title="Terug naar hoofdpagina">
+                        <i class="material-icons">keyboard_backspace</i>
+                    </a>
+                </div>
+            </header>
+
+            <h2 class="mobile-title">Wat te drinken?</h2>
+            <input type="text" class="mobile-search" placeholder="Zoek een drankje...">
+
+            <section class="banner">
+                <img src="../drank-pagina/images dranken/Banner bubble tea dranken.png" alt="Banner">
+            </section>
+
+            <div class="mobile-filters">
+                <button class="filter-btn kleur1" data-type="frisdrank">Frisdranken</button>
+                <button class="filter-btn kleur2" data-type="koffie">Koffie & Espresso</button>
+                <button class="filter-btn kleur3" data-type="thee">Thee</button>
+                <button class="filter-btn kleur4" data-type="smoothie">Smoothies</button>
+                <button class="filter-btn kleur5" data-type="warm">Warme dranken</button>
+                <button class="filter-btn kleur6" data-type="alcoholvrij">Alcoholvrije cocktails</button>
+                <button class="filter-btn kleur7" data-type="makkelijk">Makkelijke dranken</button>
+                <button class="filter-btn kleur8" data-type="snel">Snelle dranken</button>
+                <button class="filter-btn kleur9" data-type="feestelijk">Feestelijke dranken</button>
+            </div>
+
+            
+
+            <section class="desserts">
+
+                <a href="/pages/drank-pagina/instructies/biokamillethee.html"  class="card" data-type="thee warm">
+                    <div class="card-image">
+                        <img src="/pages/drank-pagina/images dranken/Bio-kamillethee met venkel.png" alt="Bio-kamillethee met venkel">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Bio-kamillethee met venkel</h4>
+                    <p>5 min • 5 kcal</p>
+                </a>
+
+                <a href="/pages/drank-pagina/instructies/ctanberrydrank.html"  class="card" data-type="frisdrank feestelijk">
+                    <div class="card-image">
+                        <img src="/pages/drank-pagina/images dranken/Cranberrydrank met mango-ijsblokjes.png" alt="Cranberrydrank met mango-ijsblokjes">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Cranberrydrank met mango-ijsblokjes</h4>
+                    <p>10 min. bereiden / 4 uur wachten • 140 kcal</p>
+                </a>
+
+                <a href="/pages/drank-pagina/instructies/ijscoffieperla.html"  class="card" data-type="koffie snel">
+                    <div class="card-image">
+                        <img src="/pages/drank-pagina/images dranken/IJskoffie met Perla.png" alt="IJskoffie met Perla">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>IJskoffie met Perla</h4>
+                    <p>10 min • 70 kcal</p>
+                </a>
+
+                <a href="/pages/drank-pagina/instructies/sgroppino.html" class="card" data-type="alcoholvrij feestelijk snel">
+                    <div class="card-image">
+                        <img src="/pages/drank-pagina/images dranken/Sgroppino alcoholvrij.png" alt="Sgroppino alcoholvrij">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Sgroppino alcoholvrij</h4>
+                    <p>5 min. bereiden / 30 min. wachten • 95 kcal</p>
+                </a>
+
+                <a href="/pages/drank-pagina/instructies/frissesmoothiemunt.html" class="card" data-type="smoothie makkelijk snel">
+                    <div class="card-image">
+                        <img src="/pages/drank-pagina/images dranken/Frisse smoothie met munt, limoen en bosvruchten.png" alt="Frisse smoothie met munt, limoen en bosvruchten">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Frisse smoothie met munt, limoen en bosvruchten</h4>
+                    <p>5 min • 140 kcal</p>
+                </a>
+
+                <a href="/pages/drank-pagina/instructies/smoothiedadel.html"  class="card" data-type="smoothie koffie snel">
+                    <div class="card-image">
+                        <img src="/pages/drank-pagina/images dranken/Smoothie met dadel, koffie en cacao.png" alt="Smoothie met dadel, koffie en cacao">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Smoothie met dadel, koffie en cacao</h4>
+                    <p>5 min • 285 kcal</p>
+                </a>
+
+                <a href="/pages/drank-pagina/instructies/gintonic.html"  class="card" data-type="koffie alcoholvrij feestelijk">
+                    <div class="card-image">
+                        <img src="/pages/drank-pagina/images dranken/Gin-tonic met espresso.png" alt="Gin-tonic met espresso">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Gin-tonic met espresso</h4>
+                    <p>5 min • 130 kcal</p>
+                </a>
+
+                <a href="/pages/drank-pagina/instructies/smoothiebanaan.html"  class="card" data-type="smoothie makkelijk">
+                    <div class="card-image">
+                        <img src="/pages/drank-pagina/images dranken/Smoothie banaan.png" alt="Smoothie banaan">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Smoothie banaan</h4>
+                    <p>5 min • 235 kcal</p>
+                </a>
+
+                <a href="/pages/drank-pagina/instructies/groenesmoothie.html"  class="card" data-type="smoothie">
+                    <div class="card-image">
+                        <img src="/pages/drank-pagina/images dranken/Groene smoothie met skyr.png" alt="Groene smoothie met skyr">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Groene smoothie met skyr</h4>
+                    <p>10 min • 150 kcal</p>
+                </a>
+
+                <a href="/pages/drank-pagina/instructies/smoothiezomerfruit.html" class="card" data-type="smoothie snel">
+                    <div class="card-image">
+                        <img src="/pages/drank-pagina/images dranken/Smoothie met zomerfruit en havermout.png" alt="Smoothie met zomerfruit en havermout">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Smoothie met zomerfruit en havermout</h4>
+                    <p>5 min • 285 kcal</p>
+                </a>
+
+                <a href="/pages/drank-pagina/instructies/affogato.html" class="card" data-type="koffie warm feestelijk">
+                    <div class="card-image">
+                        <img src="/pages/drank-pagina/images dranken/Affogato met kletskoppen.png" alt="Affogato met kletskoppen">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Affogato met kletskoppen</h4>
+                    <p>10 min • 150 kcal</p>
+                </a>
+
+                <a href="/pages/drank-pagina/instructies/horchata.html" class="card" data-type="frisdrank makkelijk">
+                    <div class="card-image">
+                        <img src="/pages/drank-pagina/images dranken/Horchata.png" alt="Horchata">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Horchata</h4>
+                    <p>15 min. bereiden / 1 uur wachten • 165 kcal</p>
+                </a>
+
+                <a href="/pages/drank-pagina/instructies/versemuntthee.html"  class="card" data-type="thee warm">
+                    <div class="card-image">
+                        <img src="/pages/drank-pagina/images dranken/Verse muntthee met salie.png" alt="Verse muntthee met salie">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Verse muntthee met salie</h4>
+                    <p>15 min </p>
+                </a>
+
+                <a href="/pages/drank-pagina/instructies/smoothiespinazie.html"  class="card" data-type="smoothie makkelijk">
+                    <div class="card-image">
+                        <img src="/pages/drank-pagina/images dranken/Groene smoothie met spinazie, peer en gember.png" alt="Groene smoothie met spinazie, peer en gember">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Groene smoothie met spinazie, peer en gember</h4>
+                    <p>5 min • 125 kcal</p>
+                </a>
+
+                <a href="/pages/drank-pagina/instructies/hardseltzer.html"  class="card" data-type="frisdrank alcoholvrij">
+                    <div class="card-image">
+                        <img src="/pages/drank-pagina/images dranken/Hardseltzer vlierbloesem en citroen.png" alt="Hardseltzer vlierbloesem en citroen">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Hardseltzer vlierbloesem en citroen</h4>
+                    <p>5 min • 135 kcal</p>
+                </a>
+
+                <a href="/pages/drank-pagina/instructies/limonadeaarbei.html" class="card" data-type="frisdrank makkelijk feestelijk">
+                    <div class="card-image">
+                        <img src="/pages/drank-pagina/images dranken/Limonade van aardbeien en vlierbloesemsiroop.png " alt="Limonade van aardbeien en vlierbloesemsiroop">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Limonade van aardbeien en vlierbloesemsiroop</h4>
+                    <p>5 min • 90 kcal</p>
+                </a>
+
+                <a href="/pages/drank-pagina/instructies/frozencoffee.html"  class="card" data-type="koffie feestelijk">
+                    <div class="card-image">
+                        <img src="/pages/drank-pagina/images dranken/Frozen whipped coffee.png" alt="Frozen whipped coffee">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Frozen whipped coffee</h4>
+                    <p>15 min • 155 kcal</p>
+                </a>
+
+                <a href="/pages/drank-pagina/instructies/veganhot.html"  class="card" data-type="koffie warm makkelijk">
+                    <div class="card-image">
+                        <img src="/pages/drank-pagina/images dranken/Vegan hot chocolate.png" alt="Vegan hot chocolate">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Vegan hot chocolate</h4>
+                    <p>5 min • 155 kcal</p>
+                </a>
+
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // FILTER OP CHECKBOXEN
+        const checkboxes = document.querySelectorAll('.filter');
+        const buttons = document.querySelectorAll('.filter-btn');
+        const cards = document.querySelectorAll('.card');
+        
+        // Helper functie om filter toe te passen
+        function applyFilter(activeTypes) {
+          if (activeTypes.length === 0) {
+            cards.forEach(card => card.style.display = 'flex');
+          } else {
+            cards.forEach(card => {
+              const cardType = card.getAttribute('data-type') || '';
+              const cardTypes = cardType.split(' ');
+              const match = activeTypes.some(type => cardTypes.includes(type));
+              card.style.display = match ? 'flex' : 'none';
+            });
+          }
+        }
+        
+        // Luister naar checkbox veranderingen
+        checkboxes.forEach(cb => {
+          cb.addEventListener('change', () => {
+            // Haal actieve types van checkboxen
+            const activeCheckboxTypes = Array.from(checkboxes)
+              .filter(c => c.checked)
+              .map(c => c.getAttribute('data-type'));
+        
+            // Haal actieve types van buttons
+            const activeButtonTypes = Array.from(buttons)
+              .filter(b => b.classList.contains('active'))
+              .map(b => b.getAttribute('data-type'));
+        
+            // Combineer actief van beide filters
+            const combinedActiveTypes = [...new Set([...activeCheckboxTypes, ...activeButtonTypes])];
+        
+            applyFilter(combinedActiveTypes);
+          });
+        });
+        
+        // Luister naar button clicks
+        buttons.forEach(button => {
+          button.addEventListener('click', () => {
+            // Toggle 'active' class
+            button.classList.toggle('active');
+        
+            // Haal actieve types van checkboxen
+            const activeCheckboxTypes = Array.from(checkboxes)
+              .filter(c => c.checked)
+              .map(c => c.getAttribute('data-type'));
+        
+            // Haal actieve types van buttons
+            const activeButtonTypes = Array.from(buttons)
+              .filter(b => b.classList.contains('active'))
+              .map(b => b.getAttribute('data-type'));
+        
+            // Combineer actief van beide filters
+            const combinedActiveTypes = [...new Set([...activeCheckboxTypes, ...activeButtonTypes])];
+        
+            applyFilter(combinedActiveTypes);
+          });
+        });
+
+    </script>
+</body>
+</html>

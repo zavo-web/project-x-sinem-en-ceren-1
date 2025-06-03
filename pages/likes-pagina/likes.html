@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Favoriete Desserts</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../likes-pagina/likes.css">
+</head>
+<body>
+  <div class="nav">
+    <i class="material-icons" onclick="window.location.href='index.html'">arrow_back</i>
+  </div>
+
+  <h1>Je favoriete desserts</h1>
+  <div class="favorites-container"></div>
+
+  <script>
+    const container = document.querySelector('.favorites-container');
+    const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+
+    if (favorites.length === 0) {
+      container.innerHTML = "<p>Je hebt nog geen favoriete desserts opgeslagen.</p>";
+    } else {
+      favorites.forEach(html => {
+        container.insertAdjacentHTML('beforeend', html);
+      });
+    }
+  </script>
+</body>
+</html>

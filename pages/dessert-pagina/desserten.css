@@ -1,0 +1,596 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0c0c0c;
+  color: #fff;
+  height: 100vh;
+  font-family: 'Cormorant Garamond';
+}
+
+.container {
+  display: flex;
+  height: 200%;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 20%;
+  background: #111;
+  padding: 3%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 0.4rem;
+}
+
+
+
+.logo {
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+.sidebar h3 {
+  font-size: 1.2rem;
+  margin-top: 10%;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 5% 0;
+}
+
+.filter-zoekbalk {
+  width: 100%;
+  padding: 5%;
+  border-radius: 30px;
+  border: none;
+  margin-bottom: 2%;
+  background: #222;
+  color: #fff;
+}
+
+.main-content {
+  margin-left: 20%;
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3% 5%;
+  box-sizing: border-box;
+
+}
+
+.nav-links {
+  display: flex;
+  gap: 50px;
+  margin: 0 auto; 
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icons i {
+  font-size: 2rem;
+}
+
+
+.banner {
+  width: 90%;
+  margin: 3% auto;
+  margin-top: 1%;
+}
+
+.banner img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.desserts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  margin: 3% auto;
+  width: 90%;
+  margin-left: 11%;
+}
+
+.card {
+  background: #1a1a1a;
+  border-radius: 10px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+  text-align: left;
+  margin-bottom: 5%;
+  text-decoration: none;       
+  color: inherit;              
+  display: block;  
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  cursor: pointer;            
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  
+}
+
+.card-image {
+  position: relative;
+  width: 100%;
+}
+
+.card-image img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.favorite-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.card h4 {
+  font-size: 1rem;
+  color: #fff;
+  margin: 5px;
+  padding: 5%;
+}
+
+.card p {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin: 0 10px 10px 10px;
+  padding: 5%;
+}
+
+.main-content {
+  position: relative;
+}
+
+.mobile-title {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.mobile-filters {
+  display: none;
+}
+
+.back-icon {
+  display: none;
+}
+
+.top-bar {
+  display: none;
+}
+
+.mobile-search {
+  display: none; 
+}
+
+.tablet-logo {
+  display: none;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 770px) {
+.desserts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    margin: 3% auto;
+    width: 90%;
+    justify-content: center;
+  }
+
+  .card {
+    width: 30%;
+    margin-bottom: 5%;
+  }
+
+
+.card-image {
+  position: relative;
+  width: 100%;
+}
+
+.card-image img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.sidebar {
+  display: none;
+}
+
+.main-content {
+  margin-left: 0; 
+  width: 100%; 
+}
+  
+
+.mobile-filters {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden; 
+  gap: 10px;
+  padding: 0 1px;  
+  margin-top: 5%;
+  width: 113%;
+  box-sizing: border-box;
+  margin-bottom: 1%;
+  margin-left: 6%;
+  white-space: nowrap;
+  height: auto;  
+  min-height: 60px;  
+  align-items: center;  
+}
+
+
+.filter-btn {
+  flex: 0 0 auto;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  cursor: pointer;
+  margin-bottom: 0;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.3rem;  
+  box-sizing: border-box;
+}
+
+
+.mobile-filters::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-btn.active {
+  background-color:rgb(50, 0, 0);
+  color: #ffffff;
+}
+
+.kleur1 {
+  background-color: #310000; 
+}
+
+.kleur2 {
+  background-color: #3a2c40; 
+}
+
+.kleur3 {
+  background-color: #9a727e; 
+}
+
+.kleur4 {
+  background-color: #53667d; 
+}
+
+.kleur5 {
+  background-color: #303d2f; 
+}
+
+.kleur6 {
+  background-color: #909364; 
+}
+
+.kleur7 {
+  background-color: #528a8a;
+}
+
+.kleur8 {
+  background-color: #3f2a30; 
+}
+
+.kleur9 {
+  background-color: #685a6e; 
+}
+
+
+
+
+
+
+.kleur1.active {
+  background-color: #360000;
+  color: white;
+}
+
+.kleur2.active {
+  background-color: #360000;
+  color: white;
+}
+
+.kleur3.active {
+  background-color: #360000;
+  color: white;
+}
+
+.tablet-logo {
+  display: none;
+}
+
+
+
+}
+
+
+
+
+@media (max-width: 480px) {
+
+  body {
+    background-color:#101010;
+  }
+
+   .top-bar {
+    display: block;
+    margin-top: 10px;
+    margin-left: -24%;
+  }
+
+  .top-bar a {
+    color: #ffffff;
+    font-size: 4%;
+    text-decoration: none;
+  
+  }
+  .top-bar a i {
+  font-size: 2.3rem; 
+  color: #ffffff;
+}
+
+  .banner {
+    display: none;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .nav-links {
+    display: none;
+  }
+  .icons {
+  display: flex; 
+  position: absolute;
+  top: 3%;
+  right: 7%;
+  }
+
+  .icons a {
+  display: none;
+  }
+
+  .icons i {
+  font-size: 2.6rem; 
+  }
+
+
+
+   .mobile-title {
+    display: block;
+    text-align: left;
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.8rem;
+    margin-left: -10%;
+    margin-top: 5%;
+  }
+
+  .mobile-search {
+  display: block;
+  width: 80%;
+  padding: 3%;
+  border-radius: 20px;
+  border: none;
+  background: #ffffff;
+  color: #fff;
+  font-size: 1rem;
+  margin-left: -12%;
+
+}
+
+
+   .desserts {
+    margin-top: 1%; 
+    margin-left: -13%;   
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 4%; 
+    margin-right: -20%;
+    
+  }
+
+  .card {
+  width: calc(52% - 4%); 
+}
+
+
+.mobile-filters {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden; 
+  gap: 10px;
+  padding: 0 1px;  
+  margin-top: 5%;
+  width: 113%;
+  box-sizing: border-box;
+  margin-bottom: 10%;
+  margin-left: -15%;
+  white-space: nowrap;
+  height: auto;  
+  min-height: 60px;  
+  align-items: center;  
+}
+
+.filter-btn {
+  flex: 0 0 auto;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  cursor: pointer;
+  margin-bottom: 0;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.3rem;  
+  box-sizing: border-box;
+}
+
+
+.container, .sidebar, body, html {
+  overflow: visible !important;
+}
+
+
+
+.mobile-filters::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-btn.active {
+  background-color:rgb(50, 0, 0);
+  color: #ffffff;
+}
+
+.kleur1 {
+  background-color: #310000; 
+}
+
+.kleur2 {
+  background-color: #3a2c40; 
+}
+
+.kleur3 {
+  background-color: #9a727e; 
+}
+
+.kleur4 {
+  background-color: #53667d; 
+}
+
+.kleur5 {
+  background-color: #303d2f; 
+}
+
+.kleur6 {
+  background-color: #909364; 
+}
+
+.kleur7 {
+  background-color: #528a8a;
+}
+
+.kleur8 {
+  background-color: #3f2a30; 
+}
+
+.kleur9 {
+  background-color: #685a6e; 
+}
+
+
+
+
+
+
+.kleur1.active {
+  background-color: #360000;
+  color: white;
+}
+
+.kleur2.active {
+  background-color: #360000;
+  color: white;
+}
+
+.kleur3.active {
+  background-color: #360000;
+  color: white;
+}
+
+.tablet-logo {
+  display: none;
+}
+
+}

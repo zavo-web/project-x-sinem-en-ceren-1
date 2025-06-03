@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega chocolate chip cookie met ijs & chocoladesaus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../istructies/instructie.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="../../dessert-pagina/dessertenn.html">
+            <img src="/fotos/Logo.png" alt="logo" class="logo">
+        </a>
+
+        <nav>
+            <a href="../../bestel-pagina/bestellen.html">Bestellen</a>
+            <a href="../../bonus_pagina/bonus.html">Bonus</a>
+            <a href="../../registreren-pagina/registreren.html">Contact</a>
+            <a href="../../over-ons/over_ons.html">Over ons</a>
+        </nav>
+
+        <div class="search-profile">
+            <input type="text" class="search" placeholder="Zoeken...">
+            <div class="icons">
+                <a href="/likes.html" title="Favoriete desserts">
+                    <i class="material-icons">favorite_border</i>
+                </a>
+                <i class="material-icons">account_circle</i>
+            </div>
+        </div>
+
+        <button id="menu-toggle" aria-label="Menu openen">
+            <i class="material-icons">menu</i>
+        </button>
+
+        <nav class="mobile-menu" id="mobile-nav">
+            <a href="/index.html">Home</a>
+            <a href="../../bestel-pagina/bestellen.html">Bestellen</a>
+            <a href="../../bonus_pagina/bonus.html">Bonus</a>
+            <a href="../../registreren-pagina/registreren.html">Contact</a>
+            <a href="../../over-ons/over_ons.html">Over ons</a>
+        </nav>
+
+        <div class="header-search">
+            <input type="text" class="search-mobile" placeholder="Waar ben je op zoek?">
+        </div>
+
+    </header>
+
+    <section class="hero">
+        <img src="https://static.ah.nl/static/recepten/img_RAM_PRD124679_1024x748_JPG.jpg" alt="Mega chocolate chip cookie met ijs & chocoladesaus">
+        <div class="hero-text">
+            <h2>Mega chocolate chip cookie met ijs & chocoladesaus</h2>
+            <p>Van deze mega chocolate chip cookie eet je met z'n achten. Sharing is caring.</p>
+
+            <div class="info">
+                <div class="info-item">
+                    <span class="material-icons">schedule</span> 15 min. bereiden / 25 min. oventijd / 15 min. wachten
+                </div>
+                <div class="info-item">
+                    <span class="material-icons">local_fire_department</span> 395 kcal
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button>koekjes</button>
+                <button>ijs</button>
+                <button>feestelijk</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="ingredients">
+            <h3>Ingrediënten</h3>
+            <ul>
+                <li>75 gram ongezouten pecannoten</li>
+                <li>445 gram HomeMade complete mix
+                    <br> voor chocolate chip cookies</li>
+                <li>40 ml water</li>
+                <li>30 gram AH Biologisch extra
+                    <br> pure chocolade 72%</li>
+                <li>5 bollen slagroomijs</li>
+            </ul>
+        </div>
+
+        <div class="instructies">
+            <h3>Aan de slag</h3>
+            <ol>
+                <li>Verwarm de oven voor op 180 °C. Hak de pecannoten grof. Meng de mix voor chocolate chip cookies, het water, de chocolade chunks uit het pak en 60 gram pecannoten (per 8 personen) met de mixer met deeghaken tot een kruimelig deeg. Kneed
+                    vervolgens met de hand door tot een soepel deeg.</li>
+                <li>Bekleed een bakplaat met bakpapier. Maak van het deeg een cirkel van Ø 30 cm en 1 cm dik op de bakplaat. Bak de mega cookie in ca. 25 minuten gaar in de oven, laat 15 minuten afkoelen.</li>
+                <li>Breng ondertussen een pan met een laag water aan de kook en hang een hittebestendige kom in de pan. Zorg dat de kom het water niet raakt. Breek de chocolade in stukjes en laat smelten in de kom (au bain-marie). Serveer de mega chocolate
+                    chip cookie met de bollen slagroomijs, besprenkel met de gesmolten chocolade en bestrooi met de rest van de pecannoten.</li>
+            </ol>
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <p>&copy; 2025 Culniara. Alle rechten voorbehouden.</p>
+        <nav class="footer-nav">
+            <a href="/index.html">Home</a> |
+            <a href="../../registreren-pagina/registreren.html">Contact</a> |
+            <a href="../../privacy/privacy.html">Privacyverklaring</a>
+        </nav>
+    </footer>
+
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+          const mobileNav = document.getElementById('mobile-nav');
+          const menuIcon = menuToggle.querySelector('i');
+          let menuOpen = false;
+        
+          menuToggle.addEventListener('click', () => {
+            menuOpen = !menuOpen;
+        
+            // Toggle menu zichtbaar
+            mobileNav.classList.toggle('open', menuOpen);
+        
+            // Verander icoon van 'menu' naar 'close' en omgekeerd
+            menuIcon.textContent = menuOpen ? 'close' : 'menu';
+          });
+    </script>
+</body>
+</html>

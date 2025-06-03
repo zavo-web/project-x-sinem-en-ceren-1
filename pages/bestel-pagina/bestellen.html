@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bestellenpagina</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../bestel-pagina/bestellen.css">
+</head> 
+
+<body>
+
+  <header class="top-header">
+  <a href="../index-pagina/index.html" class="logo-link">
+    <img src="../bestel-pagina/images/Logo.png" alt="Logo" class="logo">
+  </a>
+
+  <div class="header-icons">
+    <a href="../login-pagina/login.html" class="icon-btn">
+  <span class="material-icons">person</span>
+</a>
+    <a href="../winkelmand_bestel/winkelmand_bestel.html" class="icon-btn">
+  <span class="material-icons">shopping_cart</span>
+</a>
+  </div>
+</header>
+
+  <main>
+    <div class="grid">
+
+     <div class="blok">
+  <img src="../bestel-pagina/images/bestellen_burger.jpg" alt="Burger">
+  <div class="blok-info">
+    <div class="tekst-links">
+      <h4>Burger</h4>
+      <p>10,99 €</p>
+    </div>
+    <button class="winkelmand-btn" onclick="voegToeAanMand('Burger', 10.99 ,'Sappige rundvleesburger met kaas, sla en tomaat.', '../bestel-pagina/images/bestellen_burger.jpg')">
+      🛒
+    </button>
+  </div>
+</div>
+
+   <div class="blok">
+  <img src="images/pasta_bestellen.jpg" alt="pasta">
+  <div class="blok-info">
+    <div class="tekst-links">
+      <h4>Pasta met groenten</h4>
+      <p>11,99 €</p>
+    </div>
+    <button class="winkelmand-btn" onclick="voegToeAanMand('Pasta met groenten', 11.99, 'Verse pasta met seizoensgroenten en romige saus.', '../bestel-pagina/images/pasta_bestellen.jpg')">
+      🛒
+    </button>
+  </div>
+</div>
+
+      <div class="blok">
+  <img src="images/cake_bestellen.jpg" alt="cake">
+  <div class="blok-info">
+    <div class="tekst-links">
+      <h4>Chocolade cake</h4>
+      <p>8,99 €</p>
+    </div>
+    <button class="winkelmand-btn" onclick="voegToeAanMand('Chocolade cake', 8.99, 'Rijke chocolade cake met ganache topping.', '../bestel-pagina/images/cake_bestellen.jpg')">
+      🛒
+    </button>
+  </div>
+</div>
+
+    <div class="blok">
+  <img src="images/steak_bestellen.jpg" alt="vlees">
+  <div class="blok-info">
+    <div class="tekst-links">
+      <h4>Lamshak vlees</h4>
+      <p>9,99 €</p>
+    </div>
+    <button class="winkelmand-btn" onclick="voegToeAanMand('Lamshak vlees', 9.99, 'Mals lamsvlees langzaam gegaard met kruiden en knoflook.' , '../bestel-pagina/images/steak_bestellen.jpg')">
+      🛒
+    </button>
+  </div>
+</div>
+
+    <div class="blok">
+  <img src="images/salade_bestellen.jpg" alt="salade">
+  <div class="blok-info">
+    <div class="tekst-links">
+      <h4>Groene gezonde salade</h4>
+      <p>6,99 €</p>
+    </div>
+    <button class="winkelmand-btn" onclick="voegToeAanMand('Groene gezonde salade', 6.99,'Frisse salade met komkommer, tomaat, avocado en een citroen-honing dressing.' , '../bestel-pagina/images/salade_bestellen.jpg')">
+      🛒
+    </button>
+  </div>
+</div>
+
+    <div class="blok">
+  <img src="images/pizza_bestellen.jpg" alt="pizza">
+  <div class="blok-info">
+    <div class="tekst-links">
+      <h4>Margherita pizza</h4>
+      <p>10,99 €</p>
+    </div>
+    <button class="winkelmand-btn" onclick="voegToeAanMand('Margherita pizza', 10.99 , 'Dunne krokante bodem met tomatensaus, mozzarella en verse basilicum.' , '../bestel-pagina/images/pizza_bestellen.jpg')">
+      🛒
+    </button>
+  </div>
+</div>
+
+    <div class="blok">
+  <img src="images/suchi_bestellen.jpg" alt="suchi">
+  <div class="blok-info">
+    <div class="tekst-links">
+      <h4>Verschillende suchi </h4>
+      <p>10,99 €</p>
+    </div>
+    <button class="winkelmand-btn" onclick="voegToeAanMand('Verschillende such', 10.99 , 'Assortiment van verse sushirollen met zalm, tonijn, avocado en komkommer.' , '../bestel-pagina/images/suchi_bestellen.jpg')">
+      🛒
+    </button>
+  </div>
+</div>
+
+  <div class="blok">
+  <img src="images/sandwich_bestellen.jpg" alt="sandwich">
+  <div class="blok-info">
+    <div class="tekst-links">
+      <h4>Gezonde sandwich</h4>
+      <p>9,99 €</p>
+    </div>
+    <button class="winkelmand-btn" onclick="voegToeAanMand('Gezonde sandwich', 9.99 , 'Volkoren sandwich met kipfilet, hummus, spinazie en tomaat.' , '../bestel-pagina/images/sandwich_bestellen.jpg')">
+      🛒
+    </button>
+  </div>
+</div>
+
+  <div class="blok">
+  <img src="images/ramen_bestellen.jpg" alt="ramen">
+  <div class="blok-info">
+    <div class="tekst-links">
+      <h4>Ramen met vlees</h4>
+      <p>10,99 €</p>
+    </div>
+    <button class="winkelmand-btn" onclick="voegToeAanMand('Ramen met vlees', 10.99 , 'Japanse noedelsoep met rundvlees, zachtgekookt ei en verse groenten.' , '../bestel-pagina/images/ramen_bestellen.jpg')">
+      🛒
+    </button>
+  </div>
+</div>
+
+      
+    </div>
+  </main>
+
+<script>
+function voegToeAanMand(naam, prijs, beschrijving, afbeelding) {
+  let winkelmand = JSON.parse(localStorage.getItem('winkelmand')) || [];
+  winkelmand.push({ naam, prijs, beschrijving, afbeelding });
+  localStorage.setItem('winkelmand', JSON.stringify(winkelmand));
+  alert(`${naam} toegevoegd aan je winkelmand.`);
+}
+</script>
+
+</body>
+</html>

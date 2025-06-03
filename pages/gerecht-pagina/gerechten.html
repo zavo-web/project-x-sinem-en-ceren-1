@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gerechtpagina</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../dessert-pagina/desserten.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <a href="../../index.html">
+                <img src="/fotos/Logo.png" alt="logo" class="logo">
+            </a>
+            <h3>Menu gang</h3>
+            <ul>
+                <li>
+                    <input type="checkbox" class="filter" data-type="ontbijt"> Ontbijt</li>
+                <li>
+                    <input type="checkbox" class="filter" data-type="lunch"> Lunch</li>
+                <li>
+                    <input type="checkbox" class="filter" data-type="voorgerecht"> Voorgerechten</li>
+                <li>
+                    <input type="checkbox" class="filter" data-type="hoofdgerecht"> Hoofdgerechten</li>
+                <li>
+                    <input type="checkbox" class="filter" data-type="bijgerecht"> Bijgerechten</li>
+            </ul>
+            <h3>Soorten gerechten</h3>
+            <input type="text" placeholder="Zoek gerecht..." class="filter-zoekbalk">
+            <ul>
+                <li>
+                    <input type="checkbox" class="filter" data-type="soep"> Soepen</li>
+                <li>
+                    <input type="checkbox" class="filter" data-type="salade"> Salade</li>
+                <li>
+                    <input type="checkbox" class="filter" data-type="gebak"> Gebak</li>
+                <li>
+                    <input type="checkbox" class="filter" data-type="pasta"> Pasta</li>
+            </ul>
+            <h3>Recepten met</h3>
+            <ul>
+                <li>
+                    <input type="checkbox" class="filter" data-type="vlees"> Vlees</li>
+                <li>
+                    <input type="checkbox" class="filter" data-type="vis"> Vis</li>
+            </ul>
+            <h3>Speciale wensen</h3>
+            <ul>
+                <li>
+                    <input type="checkbox" class="filter" data-type="dieet"> Dieet</li>
+                <li>
+                    <input type="checkbox" class="filter" data-type="vegetarisch"> Vegetarische gerechten</li>
+                <li>
+                    <input type="checkbox" class="filter" data-type="gezond"> gezond</li>
+            </ul>
+            <h3>Op basis van</h3>
+            <ul>
+                <li>
+                    <input type="checkbox" class="filter" data-type="makkelijk"> Makkelijke gerechten</li>
+                <li>
+                    <input type="checkbox" class="filter" data-type="snel"> Snelle gerechten</li>
+                <li>
+                    <input type="checkbox" class="filter" data-type="uitdagend"> Uitdagende gerechten</li>
+            </ul>
+        </aside>
+
+        <img src="../../fotos/Logo.png" alt="logo" class="tablet-logo">
+
+        <main class="main-content">
+            <header class="nav">
+                <div class="nav-links">
+                    <a href="/pages/bestel-pagina/bestellen.html">Bestellen</a>
+                    <a href="/pages/bonus_pagina/bonus.html">Bonus</a>
+                    <a href="/pages/contact-pagina/contact.html">Contact</a>
+                    <a href="/pages/over-ons/over_ons.html">Over ons</a>
+                </div>
+                <div class="icons">
+                    <a href="../likes-pagina/likes.html" title="Favoriete desserts">
+                        <i class="material-icons">favorite_border</i>
+                    </a>
+                    <i class="material-icons">account_circle</i>
+                </div>
+
+                <div class="top-bar">
+                    <a href="../../index.html" title="Terug naar hoofdpagina">
+                        <i class="material-icons">keyboard_backspace</i>
+                    </a>
+                </div>
+            </header>
+
+            <h2 class="mobile-title">Wat te eten?</h2>
+            <input type="text" class="mobile-search" placeholder="Zoek een dessert...">
+
+            <section class="banner">
+                <img src="/pages/gerecht-pagina/fotos gerechten/banner gerechtenn.png" alt="Banner">
+            </section>
+
+            <div class="mobile-filters">
+                <button class="filter-btn kleur1" data-type="ontbijt">Ontbijt</button>
+                <button class="filter-btn kleur2" data-type="lunch">Lunch</button>
+                <button class="filter-btn kleur3" data-type="voorgerecht">Voorgerechten</button>
+                <button class="filter-btn kleur4" data-type="hoofdgerecht">Hoofdgerechten</button>
+                <button class="filter-btn kleur5" data-type="bijgerecht">Bijgerechten</button>
+
+                <button class="filter-btn kleur6" data-type="soep">Soepen</button>
+                <button class="filter-btn kleur7" data-type="salade">Salade</button>
+                <button class="filter-btn kleur8" data-type="gebak">Gebak</button>
+                <button class="filter-btn kleur9" data-type="pasta">Pasta</button>
+
+                <button class="filter-btn kleur10" data-type="vlees">Vlees</button>
+                <button class="filter-btn kleur11" data-type="vis">Vis</button>
+
+                <button class="filter-btn kleur12" data-type="dieet">Dieet</button>
+                <button class="filter-btn kleur13" data-type="vegetarisch">Vegetarische gerechten</button>
+                <button class="filter-btn kleur14" data-type="gezond">Gezond</button>
+
+                <button class="filter-btn kleur15" data-type="makkelijk">Makkelijke gerechten</button>
+                <button class="filter-btn kleur16" data-type="snel">Snelle gerechten</button>
+                <button class="filter-btn kleur17" data-type="uitdagend">Uitdagende gerechten</button>
+            </div>
+
+
+
+            <section class="desserts">
+
+                <div class="card" data-link="../gerecht-pagina/instructies/pompoensoep.html" data-type="soep voorgerecht vegetarisch gezond dieet">
+                    <div class="card-image">
+                        <img src="/pages/gerecht-pagina/fotos gerechten/Pompoensoep.png" alt="Pompoensoep">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Pompoensoep met cranberrychutney en camembertkerstboompje</h4>
+                    <p>50 min • 190 kcal</p>
+                </div>
+
+                <div class="card" data-link="../gerecht-pagina/instructies/Asperges.html" data-type="bijgerecht gezond vegetarisch dieet">
+                    <div class="card-image">
+                        <img src="/pages/gerecht-pagina/fotos gerechten/Asperges met smokey rub.png" alt="Asperges met smokey rub">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Asperges met smokey rub</h4>
+                    <p>15 min • 65 kcal</p>
+                </div>
+
+                <div class="card" data-link="../gerecht-pagina/instructies/salmorejo.html" data-type="soep voorgerecht gezond vegetarisch dieet">
+                    <div class="card-image">
+                        <img src="/pages/gerecht-pagina/fotos gerechten/Salmorejo.png" alt="Salmorejo">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Salmorejo</h4>
+                    <p>30 min • 295 kcal</p>
+                </div>
+
+                <div class="card" data-link="../gerecht-pagina/instructies/ahverspakketflatbreadpizza.html" data-type="hoofdgerecht snel makkelijk">
+                    <div class="card-image">
+                        <img src="/pages/gerecht-pagina/fotos gerechten/pizza.png" alt="Pizza">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>AH verspakket flatbreadpizza paprika mozzarella</h4>
+                    <p>35 min</p>
+                </div>
+
+                <div class="card" data-link="../gerecht-pagina/instructies/geroosterdetomatensoep.html" data-type="soep voorgerecht vegetarisch gezond uitdagend">
+                    <div class="card-image">
+                        <img src="/pages/gerecht-pagina/fotos gerechten/tomatensoep.png" alt="Tomatensoep">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Geroosterde tomatensoep met crispy chili en mozzarella</h4>
+                    <p>1 uur• 355 kcal</p>
+                </div>
+
+                <div class="card" data-link="../gerecht-pagina/instructies/volkerenspaghetti.html" data-type="pasta hoofdgerecht vis gezond">
+                    <div class="card-image">
+                        <img src="/pages/gerecht-pagina/fotos gerechten/Volkorenspaghetti met zalm en boerenkool.png" alt="Volkorenspaghetti met zalm en boerenkool">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Volkorenspaghetti met zalm en boerenkool</h4>
+                    <p>30 min • 595 kcal</p>
+                </div>
+
+                <div class="card" data-link="../gerecht-pagina/instructies/Ananassirirachasalsa.html" data-type="bijgerecht vegetarisch gezond snel dieet">
+                    <div class="card-image">
+                        <img src="/pages/gerecht-pagina/fotos gerechten/Ananas-srirachasalsa.png" alt="Ananas-srirachasalsa">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Ananas-srirachasalsa</h4>
+                    <p>15 min • 40 kcal</p>
+                </div>
+
+                <div class="card" data-link="../gerecht-pagina/instructies/gevuldeitje.html" data-type="voorgerecht bijgerecht snel">
+                    <div class="card-image">
+                        <img src="/pages/gerecht-pagina/fotos gerechten/Gevuld eitje met kimchi en gojuchang.png" alt="Gevuld eitje met kimchi en gojuchang">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Gevuld eitje met kimchi en gojuchang</h4>
+                    <p>1 min • 85 kcal</p>
+                </div>
+
+                <div class="card" data-link="../gerecht-pagina/instructies/latkes.html" data-type="voorgerecht vis">
+                    <div class="card-image">
+                        <img src="/pages/gerecht-pagina/fotos gerechten/Latkes met kruiden-crème fraîche en gerookte zalm.png" alt="Latkes met kruiden-crème fraîche en gerookte zalm">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Latkes met kruiden-crème fraîche en gerookte zalm</h4>
+                    <p>40 min • 145 kcal</p>
+                </div>
+
+                <div class="card" data-link="../gerecht-pagina/instructies/Gegratineerdegeitenkaassalade.html" data-type="salade voorgerecht vegetarisch">
+                    <div class="card-image">
+                        <img src="/pages/gerecht-pagina/fotos gerechten/Gegratineerde-geitenkaassalade met aardbeien.png" alt="Gegratineerde-geitenkaassalade met aardbeien">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Gegratineerde-geitenkaassalade met aardbeien</h4>
+                    <p>38 min • 655 kcal</p>
+                </div>
+
+
+
+
+
+                <div class="card" data-type="rijst hoofdgerecht vis">
+                    <div class="card-image">
+                        <img src="/pages/gerecht-pagina/fotos gerechten/Witte-aspergerisotto met makreel van Hugo Kennis.png" alt="Witte-aspergerisotto met makreel van Hugo Kennis">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Witte-aspergerisotto met makreel van Hugo Kennis</h4>
+                    <p>30 min • 730 kcal</p>
+                </div>
+
+                <div class="card" data-type="rijst hoofdgerecht vegetarisch pittig">
+                    <div class="card-image">
+                        <img src="/pages/gerecht-pagina/fotos gerechten/Bloemkool met gochujang en rijst van Hugo Kennis.png" alt="Bloemkool met gochujang en rijst van Hugo Kennis">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Bloemkool met gochujang en rijst van Hugo Kennis</h4>
+                    <p>30 min • 425 kcal</p>
+                </div>
+
+                <div class="card" data-type="ontbijt vegetarisch gezond dieet">
+                    <div class="card-image">
+                        <img src="/pages/gerecht-pagina/fotos gerechten/Prei-paddenstoelenomelet met volkorenbrood.png" alt="Prei-paddenstoelenomelet met volkorenbrood">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Prei-paddenstoelenomelet met volkorenbrood</h4>
+                    <p>20 min • 355 kcal</p>
+                </div>
+
+                <div class="card" data-type="hoofdgerecht vegetarisch makkelijk snel dieet">
+                    <div class="card-image">
+                        <img src="/pages/gerecht-pagina/fotos gerechten/Makkelijke stamppot.png" alt="Makkelijke stamppot ">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Makkelijke stamppot met gebakken Italiaanse roerbakgroenten</h4>
+                    <p>30 min • 375 kcal</p>
+                </div>
+
+                <div class="card" data-type="pasta hoofdgerecht vlees snel">
+                    <div class="card-image">
+                        <img src="/pages/gerecht-pagina/fotos gerechten/Pasta pesto met kip.png" alt="Pasta pesto met kip">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Pasta pesto met kip</h4>
+                    <p>15 min • 435 kcal</p>
+                </div>
+
+                <div class="card" data-type="pasta hoofdgerecht vegetarisch">
+                    <div class="card-image">
+                        <img src="/pages/gerecht-pagina/fotos gerechten/Vegan penne ai funghi.png" alt="Vegan penne ai funghi">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Vegan penne ai funghi</h4>
+                    <p>30 min • 440 kcal</p>
+                </div>
+
+                <div class="card" data-type="salade voorgerecht vegetarisch snel gezond dieet">
+                    <div class="card-image">
+                        <img src="/pages/gerecht-pagina/fotos gerechten/Selderijsalade.png" alt="Selderijsalade">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Selderijsalade</h4>
+                    <p>15 min • 40 kcal</p>
+                </div>
+
+                <div class="card" data-type="lunch gebak vlees">
+                    <div class="card-image">
+                        <img src="/pages/gerecht-pagina/fotos gerechten/Caesar salad croissant.png" alt="Caesar salad croissant">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Caesar salad croissant</h4>
+                    <p>20 min • 1095 kcal</p>
+                </div>
+
+                <div class="card" data-type="hoofdgerecht vlees rijst">
+                    <div class="card-image">
+                        <img src="/pages/gerecht-pagina/fotos gerechten/Yakitori met bimi en rijst.png" alt="Yakitori met bimi en rijst">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Yakitori met bimi en rijst</h4>
+                    <p>30 min • 565 kcal</p>
+                </div>
+
+                <div class="card" data-type="hoofdgerecht vlees pittig uitdaagd">
+                    <div class="card-image">
+                        <img src="/pages/gerecht-pagina/fotos gerechten/Thaise groene curry met kip.png" alt="Thaise groene curry met kip">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Thaise groene curry met kip</h4>
+                    <p>1 uur • 700 kcal</p>
+                </div>
+
+                <div class="card" data-type="hoofdgerecht vlees rijst gezond">
+                    <div class="card-image">
+                        <img src="/pages/gerecht-pagina/fotos gerechten/Pulled chicken rijstbowl met mango.png" alt="Pulled chicken rijstbowl met mango">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Pulled chicken rijstbowl met mango</h4>
+                    <p>40 min • 625 kcal</p>
+                </div>
+
+                <div class="card" data-type="hoofdgerecht vlees gezond snel">
+                    <div class="card-image">
+                        <img src="/pages/gerecht-pagina/fotos gerechten/Aardappelpuree met spinazie en kip.png" alt="Aardappelpuree met spinazie en kip">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Aardappelpuree met spinazie en kip</h4>
+                    <p>30 min • 210 kcal</p>
+                </div>
+
+                <div class="card" data-type="hoofdgerecht vlees gezond">
+                    <div class="card-image">
+                        <img src="/pages/gerecht-pagina/fotos gerechten/Foeyonghai met Shanghai paksoi en rijst.png" alt="Foeyonghai met Shanghai paksoi en rijst">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Foeyonghai met Shanghai paksoi en rijst</h4>
+                    <p>40 min • 755 kcal</p>
+                </div>
+
+                <div class="card" data-type="soep dimsum voorgerecht moeilijk uitdagend">
+                    <div class="card-image">
+                        <img src="/pages/gerecht-pagina/fotos gerechten/Soepdumplings (xiao long bao).png" alt="Soepdumplings (xiao long bao)">
+                        <i class="material-icons favorite-icon">favorite_border</i>
+                    </div>
+                    <h4>Soepdumplings (xiao long bao)</h4>
+                    <p>1 uur 30 min • 60 kcal</p>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    <script>
+        const checkboxes = document.querySelectorAll('.filter');
+        const buttons = document.querySelectorAll('.filter-btn');
+        const cards = document.querySelectorAll('.card');
+        
+        // Helper functie om filter toe te passen
+        function applyFilter(activeTypes) {
+          if (activeTypes.length === 0) {
+            cards.forEach(card => card.style.display = 'flex');
+          } else {
+            cards.forEach(card => {
+              const cardType = card.getAttribute('data-type') || '';
+              const cardTypes = cardType.split(' ');
+              const match = activeTypes.some(type => cardTypes.includes(type));
+              card.style.display = match ? 'flex' : 'none';
+            });
+          }
+        }
+        
+        // Luister naar checkbox veranderingen
+        checkboxes.forEach(cb => {
+          cb.addEventListener('change', () => {
+            // Haal actieve types van checkboxen
+            const activeCheckboxTypes = Array.from(checkboxes)
+              .filter(c => c.checked)
+              .map(c => c.getAttribute('data-type'));
+        
+            // Haal actieve types van buttons
+            const activeButtonTypes = Array.from(buttons)
+              .filter(b => b.classList.contains('active'))
+              .map(b => b.getAttribute('data-type'));
+        
+            // Combineer actief van beide filters
+            const combinedActiveTypes = [...new Set([...activeCheckboxTypes, ...activeButtonTypes])];
+        
+            applyFilter(combinedActiveTypes);
+          });
+        });
+        
+        // Luister naar button clicks
+        buttons.forEach(button => {
+          button.addEventListener('click', () => {
+            // Toggle 'active' class
+            button.classList.toggle('active');
+        
+            // Haal actieve types van checkboxen
+            const activeCheckboxTypes = Array.from(checkboxes)
+              .filter(c => c.checked)
+              .map(c => c.getAttribute('data-type'));
+        
+            // Haal actieve types van buttons
+            const activeButtonTypes = Array.from(buttons)
+              .filter(b => b.classList.contains('active'))
+              .map(b => b.getAttribute('data-type'));
+        
+            // Combineer actief van beide filters
+            const combinedActiveTypes = [...new Set([...activeCheckboxTypes, ...activeButtonTypes])];
+        
+            applyFilter(combinedActiveTypes);
+          });
+        });
+      
+  // Maak de hele card klikbaar, behalve als je op het hartje klikt
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', function (e) {
+      if (e.target.classList.contains('favorite-icon')) {
+        // Klik op het hartje → niet navigeren
+        toggleFavorite(card);
+        return;
+      }
+
+      // Klik op de rest van de kaart → navigeer
+      const link = card.getAttribute('data-link');
+      if (link) {
+        window.location.href = link;
+      }
+    });
+  });
+
+  // Favoriet toevoegen/verwijderen
+  function toggleFavorite(card) {
+    const icon = card.querySelector('.favorite-icon');
+    icon.textContent = icon.textContent === 'favorite' ? 'favorite_border' : 'favorite';
+
+    const html = card.outerHTML;
+    let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+
+    if (icon.textContent === 'favorite') {
+      // Voeg toe
+      favorites.push(html);
+    } else {
+      // Verwijder (op basis van uniek kenmerk of innerHTML)
+      favorites = favorites.filter(item => item !== html);
+    }
+
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+  }
+    </script>
+</body>
+
+</html>

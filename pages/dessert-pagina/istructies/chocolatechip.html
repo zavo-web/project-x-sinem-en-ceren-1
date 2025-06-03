@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate chip barbe-cookies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../istructies/instructie.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="../../dessert-pagina/dessertenn.html">
+            <img src="/fotos/Logo.png" alt="logo" class="logo">
+        </a>
+
+        <nav>
+            <a href="../../bestel-pagina/bestellen.html">Bestellen</a>
+            <a href="../../bonus_pagina/bonus.html">Bonus</a>
+            <a href="../../registreren-pagina/registreren.html">Contact</a>
+            <a href="../../over-ons/over_ons.html">Over ons</a>
+        </nav>
+
+        <div class="search-profile">
+            <input type="text" class="search" placeholder="Zoeken...">
+            <div class="icons">
+                <a href="/likes.html" title="Favoriete desserts">
+                    <i class="material-icons">favorite_border</i>
+                </a>
+                <i class="material-icons">account_circle</i>
+            </div>
+        </div>
+
+        <button id="menu-toggle" aria-label="Menu openen">
+            <i class="material-icons">menu</i>
+        </button>
+
+        <nav class="mobile-menu" id="mobile-nav">
+            <a href="/index.html">Home</a>
+            <a href="../../bestel-pagina/bestellen.html">Bestellen</a>
+            <a href="../../bonus_pagina/bonus.html">Bonus</a>
+            <a href="../../registreren-pagina/registreren.html">Contact</a>
+            <a href="../../over-ons/over_ons.html">Over ons</a>
+        </nav>
+
+        <div class="header-search">
+            <input type="text" class="search-mobile" placeholder="Waar ben je op zoek?">
+        </div>
+
+    </header>
+
+    <section class="hero">
+        <img src="https://static.ah.nl/static/recepten/img_RAM_PRD202624_1024x748_JPG.jpg" alt="Chocolate chip barbe-cookies">
+        <div class="hero-text">
+            <h2>Chocolate chip barbe-cookies</h2>
+            <p>Koekjes van de BBQ? Barbe-cookies! Deze chocolate chip cookies bak je gaar op de BBQ. Dat is nou een leuke, zoete afsluiter. Ook lekker om een ijssandwich mee te maken.</p>
+
+            <div class="info">
+                <div class="info-item">
+                    <span class="material-icons">schedule</span> 40 min. bereiden / 30 min. wachten
+                </div>
+                <div class="info-item">
+                    <span class="material-icons">local_fire_department</span> 245 kcal
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button>koekjes</button>
+                <button>uitdagend</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="ingredients">
+            <h3>Ingrediënten</h3>
+            <ul>
+                <li>80 gram ongezouten roomboter</li>
+                <li>50 gram lichtbruine basterdsuiker</li>
+                <li>50 gram fijne kristalsuiker</li>
+                <li>1 scharrelei</li>
+                <li>160 gram tarwebloem</li>
+                <li>0.25 theelepel baksoda</li>
+                <li>65 gram melkchocolade druppels</li>
+                <li>0.25 theelepel zout</li>
+            </ul>
+        </div>
+
+        <div class="instructies">
+            <h3>Aan de slag</h3>
+            <ol>
+                <li><span class="step-number">1</span> Laat de boter op kamertemperatuur komen. Klop met de basterdsuiker, kristalsuiker en het ei met een handmixer tot een luchtig mengsel. Zeef de bloem, het zout en de baksoda erover en roer door met een
+                    spatel. Voeg de chocoladedruppels toe en meng tot een egaal deeg.</li>
+                <li><span class="step-number">2</span> Maak gelijke bolletjes van het deeg en leg op een bord of plank. Dek af met vershoudfolie en leg minimaal 30 min. in de koelkast. Steek de barbecue aan.</li>
+                <li><span class="step-number">3</span> Haal het deeg uit de koelkast, leg een groot stuk aluminiumfolie op de koudste kant van de barbecue en verdeel de deegbolletjes erover. Zorg dat er 3-4 cm tussen de bolletjes zit. Bak de koekjes 25-30
+                    min. met gesloten deksel tot lichtbruin en gaar.</li>
+                <li><span class="step-number">4</span> Haal de koekjes van de barbecue en laat op een bord afkoelen. Het midden zal nog een beetje zacht zijn.</li>
+            </ol>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Culniara. Alle rechten voorbehouden.</p>
+        <nav class="footer-nav">
+            <a href="/index.html">Home</a> |
+            <a href="../../registreren-pagina/registreren.html">Contact</a> |
+            <a href="../../privacy/privacy.html">Privacyverklaring</a>
+        </nav>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+          const mobileNav = document.getElementById('mobile-nav');
+          const menuIcon = menuToggle.querySelector('i');
+          let menuOpen = false;
+        
+          menuToggle.addEventListener('click', () => {
+            menuOpen = !menuOpen;
+        
+            // Toggle menu zichtbaar
+            mobileNav.classList.toggle('open', menuOpen);
+        
+            // Verander icoon van 'menu' naar 'close' en omgekeerd
+            menuIcon.textContent = menuOpen ? 'close' : 'menu';
+          });
+    </script>
+</body>
+</html>
