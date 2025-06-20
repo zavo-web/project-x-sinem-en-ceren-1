@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mango-charlotte</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../istructies/instructie.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="../../dessert-pagina/dessertenn.html">
+            <img src="/fotos/Logo.png" alt="logo" class="logo">
+        </a>
+
+        <nav>
+            <a href="../../bestel-pagina/bestellen.html">Bestellen</a>
+            <a href="../../bonus_pagina/bonus.html">Bonus</a>
+            <a href="../../registreren-pagina/registreren.html">Contact</a>
+            <a href="../../over-ons/over_ons.html">Over ons</a>
+        </nav>
+
+        <div class="search-profile">
+            <input type="text" class="search" placeholder="Zoeken...">
+            <div class="icons">
+                <a href="/likes.html" title="Favoriete desserts">
+                    <i class="material-icons">favorite_border</i>
+                </a>
+                <i class="material-icons">account_circle</i>
+            </div>
+        </div>
+
+        <button id="menu-toggle" aria-label="Menu openen">
+            <i class="material-icons">menu</i>
+        </button>
+
+        <nav class="mobile-menu" id="mobile-nav">
+            <a href="/index.html">Home</a>
+            <a href="../../bestel-pagina/bestellen.html">Bestellen</a>
+            <a href="../../bonus_pagina/bonus.html">Bonus</a>
+            <a href="../../registreren-pagina/registreren.html">Contact</a>
+            <a href="../../over-ons/over_ons.html">Over ons</a>
+        </nav>
+
+        <div class="header-search">
+            <input type="text" class="search-mobile" placeholder="Waar ben je op zoek?">
+        </div>
+
+    </header>
+
+    <section class="hero">
+        <img src="https://static.ah.nl/static/recepten/img_043798_1224x900_JPG.jpg" alt="Mango-charlotte">
+        <div class="hero-text">
+            <h2>Mango-charlotte</h2>
+
+            <div class="info">
+                <div class="info-item">
+                    <span class="material-icons">schedule</span> 30 min. bereiden / 4 uur wachten
+                </div>
+                <div class="info-item">
+                    <span class="material-icons">local_fire_department</span> 295 kcal
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button>taarten</button>
+                <button>uitdaagd</button>
+            </div>
+        </div>
+    </section>
+    <section class="content">
+        <div class="ingredients">
+            <h3>Ingrediënten</h3>
+            <ul>
+                <li>175 g - lange vingers</li>
+                <li>2 - verse mango’s</li>
+                <li>500 g - volle Franse kwark</li>
+                <li>6 blaadjes - gelatine</li>
+                <li>50 g - kristalsuiker</li>
+                <li>250 ml - verse slagroom</li>
+                <li>2 el - kraanwater</li>
+                <li>60 g - verse granaatappelpitjes</li>
+            </ul>
+            <div class="benodigheden">
+                <h4>Dit heb je nodig:</h4>
+                <ul>
+                    <li>bakpapier</li>
+                    <li>springvorm (Ø 20 cm)</li>
+                    <li>staafmixer</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="instructies">
+            <h3>Aan de slag</h3>
+            <ol>
+                <li><span class="step-number">1</span>Bekleed de bodem van de springvorm met het bakpapier. Bedek het papier met lange vingers, met de gesuikerde kant naar boven. Halveer de rest van de lange vingers in de breedte. Zet de helften rechtop tegen
+                    de zijkant van de vorm, met de gesuikerde kant naar buiten.</li>
+                <li><span class="step-number">2</span>Schil de mango's en snijd het vruchtvlees in plakken van de pit. Snijd 1/3 in partjes en bewaar afgedekt in de koelkast. Pureer de rest van de mango met een staafmixer. Week de gelatine 5 min. in ruim
+                    koud water. Meng ondertussen de gepureerde mango met de kwark. Klop de slagroom met de suiker lobbig. Spatel door de kwark.</li>
+                <li><span class="step-number">3</span>Breng in een steelpan het water tegen de kook aan en neem van het vuur. Knijp de gelatine uit, voeg toe aan het hete water en roer tot de gelatine is opgelost. Spatel door de kwark en schenk in de taartvorm.
+                    Laat minimaal 4 uur afgedekt opstijven in de koelkast. Garneer de charlotte met de partjes mango en de granaatappelpitjes. Neem uit de springvorm en serveer met het lint erom.</li>
+            </ol>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Culniara. Alle rechten voorbehouden.</p>
+        <nav class="footer-nav">
+            <a href="/index.html">Home</a> |
+            <a href="../../registreren-pagina/registreren.html">Contact</a> |
+            <a href="../../privacy/privacy.html">Privacyverklaring</a>
+        </nav>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+          const mobileNav = document.getElementById('mobile-nav');
+          const menuIcon = menuToggle.querySelector('i');
+          let menuOpen = false;
+        
+          menuToggle.addEventListener('click', () => {
+            menuOpen = !menuOpen;
+        
+            // Toggle menu zichtbaar
+            mobileNav.classList.toggle('open', menuOpen);
+        
+            // Verander icoon van 'menu' naar 'close' en omgekeerd
+            menuIcon.textContent = menuOpen ? 'close' : 'menu';
+          });
+    </script>
+</body>
+</html>

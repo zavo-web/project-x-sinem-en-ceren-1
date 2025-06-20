@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gezonde eenpersoons crumble met aardbei en framboos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../istructies/instructie.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="../../dessert-pagina/dessertenn.html">
+            <img src="/fotos/Logo.png" alt="logo" class="logo">
+        </a>
+
+        <nav>
+            <a href="../../bestel-pagina/bestellen.html">Bestellen</a>
+            <a href="../../bonus_pagina/bonus.html">Bonus</a>
+            <a href="../../registreren-pagina/registreren.html">Contact</a>
+            <a href="../../over-ons/over_ons.html">Over ons</a>
+        </nav>
+
+        <div class="search-profile">
+            <input type="text" class="search" placeholder="Zoeken...">
+            <div class="icons">
+                <a href="/likes.html" title="Favoriete desserts">
+                    <i class="material-icons">favorite_border</i>
+                </a>
+                <i class="material-icons">account_circle</i>
+            </div>
+        </div>
+
+        <button id="menu-toggle" aria-label="Menu openen">
+            <i class="material-icons">menu</i>
+        </button>
+
+        <nav class="mobile-menu" id="mobile-nav">
+            <a href="/index.html">Home</a>
+            <a href="../../bestel-pagina/bestellen.html">Bestellen</a>
+            <a href="../../bonus_pagina/bonus.html">Bonus</a>
+            <a href="../../registreren-pagina/registreren.html">Contact</a>
+            <a href="../../over-ons/over_ons.html">Over ons</a>
+        </nav>
+
+        <div class="header-search">
+            <input type="text" class="search-mobile" placeholder="Waar ben je op zoek?">
+        </div>
+
+    </header>
+
+    <section class="hero">
+        <img src="https://static.ah.nl/static/recepten/img_RAM_PRD165132_1024x748_JPG.jpg" alt="Gezonde eenpersoons crumble met aardbei en framboos">
+        <div class="hero-text">
+            <h2>Gezonde eenpersoons crumble met aardbei en framboos</h2>
+            <p>Deze gezonde eenpersoons crumble heeft een bodem van havermout, amandelen en dadels.</p>
+
+            <div class="info">
+                <div class="info-item">
+                    <span class="material-icons">schedule</span> 10 min. bereiden / 15 min. oventijd
+                </div>
+                <div class="info-item">
+                    <span class="material-icons">local_fire_department</span> 45 kcal
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button>gezond</button>
+                <button>makkelijk</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="ingredients">
+            <h3>Ingrediënten</h3>
+            <ul>
+                <li>50 g aardbeien</li>
+                <li>50 g frambozen</li>
+                <li>¼ tl gemalen anijszaad</li>
+                <li>2 el amandelen</li>
+                <li>2 el grove havermoutvlokken</li>
+                <li>2 dadels zonder pit</li>
+            </ul>
+        </div>
+
+        <div class="instructies">
+            <h3>Aan de slag</h3>
+            <ol>
+                <li>Verwarm de oven voor op 200 °C.</li>
+                <li>Maak de aardbeien schoon en snijd het vruchtvlees in parten. Meng met de frambozen en het anijszaad. Verdeel over een ovenschaaltje (∅ 9 cm) en druk licht aan zodat het fruit kneust.</li>
+                <li>Snijd de amandelen, havermoutvlokken en dadels grof, meng met 1 tl water en kneed tot een kruimig mengsel. Voeg eventueel extra water toe.</li>
+                <li>Verdeel de crumble over het fruitmengsel.</li>
+                <li>Bak ca. 15 min. goudbruin in het midden van de oven. Lekker warm of koud serveren.</li>
+            </ol>
+        </div>
+    </section>
+
+
+
+
+    <footer class="footer">
+        <p>&copy; 2025 Culniara. Alle rechten voorbehouden.</p>
+        <nav class="footer-nav">
+            <a href="/index.html">Home</a> |
+            <a href="../../registreren-pagina/registreren.html">Contact</a> |
+            <a href="../../privacy/privacy.html">Privacyverklaring</a>
+        </nav>
+    </footer>
+
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+          const mobileNav = document.getElementById('mobile-nav');
+          const menuIcon = menuToggle.querySelector('i');
+          let menuOpen = false;
+        
+          menuToggle.addEventListener('click', () => {
+            menuOpen = !menuOpen;
+        
+            // Toggle menu zichtbaar
+            mobileNav.classList.toggle('open', menuOpen);
+        
+            // Verander icoon van 'menu' naar 'close' en omgekeerd
+            menuIcon.textContent = menuOpen ? 'close' : 'menu';
+          });
+    </script>
+</body>
+</html>

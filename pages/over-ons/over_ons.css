@@ -1,0 +1,275 @@
+body {
+  margin: 0;
+  font-family: 'Cormorant Garamond';
+}
+
+.topnav {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  z-index: 10;
+}
+
+.topnav a {
+  color: #e0c6a7; 
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.login-banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.log-in-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tekst-overlay {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  color: #e0c6a7;
+  max-width: 600px;
+}
+
+.tekst-overlay h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.lijn-onder {
+  width: 80px;
+  height: 3px;
+  background-color: #e0c6a7;
+  margin-bottom: 20px;
+}
+
+.tekst-overlay p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+
+.back-arrow {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #e0c6a7;
+  font-size: 32px;
+  z-index: 20;
+  text-decoration: none;
+}
+
+.material-icons {
+  font-size: 36px;
+}
+
+.onder-afbeelding {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; 
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: #333;
+  }
+
+  .login-banner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+
+  .log-in-image {
+    display: none;
+  }
+
+ .back-arrow {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  width: 40px;       
+  height: 40px;    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;     
+  z-index: 10;
+}
+
+  .back-arrow .material-icons {
+    font-size: 24px;
+  }
+
+    .tekst-overlay {
+    position: static;
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto 0 auto;  
+    padding: 20px 25px;
+    background-color:  #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+    color: #2c3e50;
+    text-align: left;
+  }
+
+  .tekst-overlay h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: white;
+     text-align: center;
+  }
+
+  .lijn-onder {
+    width: 60px;
+    height: 4px;
+    background-color: rgb(102, 5, 5);
+    margin: 0 auto;
+    border-radius: 2px;
+  }
+
+  .tekst-overlay p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+    word-wrap: break-word;
+    color:white;
+  }
+  .onder-afbeelding {
+  width: 100%;      
+  max-width: 600px; 
+  display: block;
+  margin: 20px auto 0 auto; 
+  border-radius: 10px;       
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; 
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: #333;
+  }
+
+  .login-banner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+
+  .log-in-image {
+    display: none;
+  }
+
+  .back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    width: 44px;       
+    height: 44px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;     
+    z-index: 10;
+  }
+
+  .back-arrow .material-icons {
+    font-size: 28px;
+  }
+
+  .tekst-overlay {
+    position: static;
+    width: 85%;
+    max-width: 650px;
+    margin: 60px auto 0 auto;  
+    padding: 30px 35px;
+    background-color:  #1a1a1a;
+    border-radius: 12px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.1); 
+    color: #2c3e50;
+    text-align: left;
+  }
+
+  .tekst-overlay h2 {
+    font-size: 28px;
+    margin: 10px 0;
+    color: white;
+    text-align: center;
+  }
+
+  .lijn-onder {
+    width: 70px;
+    height: 4px;
+    background-color: rgb(102, 5, 5);
+    margin: 0 auto;
+    border-radius: 2px;
+  }
+
+  .tekst-overlay p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+    word-wrap: break-word;
+    color: white;
+  }
+
+  .onder-afbeelding {
+    width: 100%;      
+    max-width: 650px; 
+    display: block;
+    margin: 25px auto 0 auto; 
+    border-radius: 12px;       
+    box-shadow: 0 5px 12px rgba(0,0,0,0.1); 
+  }
+}

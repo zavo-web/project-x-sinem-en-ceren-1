@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AH verspakket flatbreadpizza paprika mozzarella</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../dessert-pagina/istructies/instructie.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="../../gerecht-pagina/gerechten.html">
+            <img src="/fotos/Logo.png" alt="logo" class="logo">
+        </a>
+
+        <nav>
+            <a href="../../bestel-pagina/bestellen.html">Bestellen</a>
+            <a href="../../bonus_pagina/bonus.html">Bonus</a>
+            <a href="../../registreren-pagina/registreren.html">Contact</a>
+            <a href="../../over-ons/over_ons.html">Over ons</a>
+        </nav>
+
+        <div class="search-profile">
+            <input type="text" class="search" placeholder="Zoeken...">
+            <div class="icons">
+                <a href="/likes.html" title="Favoriete desserts">
+                    <i class="material-icons">favorite_border</i>
+                </a>
+                <i class="material-icons">account_circle</i>
+            </div>
+        </div>
+
+        <button id="menu-toggle" aria-label="Menu openen">
+            <i class="material-icons">menu</i>
+        </button>
+
+        <nav class="mobile-menu" id="mobile-nav">
+            <a href="/index.html">Home</a>
+            <a href="../../bestel-pagina/bestellen.html">Bestellen</a>
+            <a href="../../bonus_pagina/bonus.html">Bonus</a>
+            <a href="../../registreren-pagina/registreren.html">Contact</a>
+            <a href="../../over-ons/over_ons.html">Over ons</a>
+        </nav>
+
+        <div class="header-search">
+            <input type="text" class="search-mobile" placeholder="Waar ben je op zoek?">
+        </div>
+    </header>
+
+    <section class="hero">
+        <img src="https://static.ah.nl/static/recepten/img_RAM_PRD179195_1224x900_JPG.jpg" alt="pizza">
+        <div class="hero-text">
+            <h2>AH verspakket flatbreadpizza paprika mozzarella</h2>
+            <p>Knapperig, vegetarisch en makkelijk: deze flatbreadpizza met paprika en mozzarella smaakt telkens weer naar meer!</p>
+            
+            <div class="info">
+                <div class="info-item">
+                    <span class="material-icons">schedule</span> 35 min. bereiden
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button>hoofdgerecht</button>
+                <button>snel</button>
+                <button>makkelijk</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="ingredients">
+            <h3>Ingrediënten</h3>
+            <ul>
+                <li>1 pak - AH flatbreadpizza paprika</li>
+                <li>mozzarella verspakket</li>
+                <li>1 el - milde olijfolie</li>
+                <li>5 - Libanese wraps</li>
+                <li>125 g - mozzarella</li>
+                <li>100 g - geraspte kaas voor pizza</li>
+            </ul>
+        </div>
+
+
+        <div class="instructies">
+            <h3>Aan de slag</h3>
+            <ol>
+                <li><span class="step-number">1</span>Verwarm de oven voor op 200 °C.</li>
+                <li><span class="step-number">2</span>Snipper de gele ui en snijd de knoflook fijn. Snijd 3 tomaten in blokjes en 2 in halve plakjes. Snijd de rode ui in dunne halve ringen. Snijd de courgette in plakjes en vervolgens in reepjes. Maak de paprika
+                    schoon en snijd in reepjes.</li>
+                <li><span class="step-number">3</span>Verhit de olijfolie in een kookpan op hoog vuur en bak hierin de gele ui en knoflook ca. 1 min.</li>
+                <li><span class="step-number">4</span>Voeg de tomatenpuree toe en bak 30 sec. mee. Voeg de tomatenblokjes en de helft van de kruidenmix toe en laat onder regelmatig roeren 5 min. pruttelen op middelhoog vuur.</li>
+                <li><span class="step-number">5</span>Besmeer de Libanese wraps met de tomatensaus. Verdeel hierover de rode ui, courgette, paprika, halve tomatenplakjes, mozzarella en de geraspte kaas voor pizza. Bestrooi met de overgebleven kruidenmix.</li>
+                <li><span class="step-number">6</span>Bak de pizza’s ca. 10 min. in de oven.</li>
+            </ol>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Culniara. Alle rechten voorbehouden.</p>
+        <nav class="footer-nav">
+            <a href="/index.html">Home</a> |
+            <a href="../../registreren-pagina/registreren.html">Contact</a> |
+            <a href="../../privacy/privacy.html">Privacyverklaring</a>
+        </nav>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+          const mobileNav = document.getElementById('mobile-nav');
+          const menuIcon = menuToggle.querySelector('i');
+          let menuOpen = false;
+        
+          menuToggle.addEventListener('click', () => {
+            menuOpen = !menuOpen;
+        
+            // Toggle menu zichtbaar
+            mobileNav.classList.toggle('open', menuOpen);
+        
+            // Verander icoon van 'menu' naar 'close' en omgekeerd
+            menuIcon.textContent = menuOpen ? 'close' : 'menu';
+          });
+    </script>
+</body>
+</html>
